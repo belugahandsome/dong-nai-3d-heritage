@@ -9,7 +9,7 @@ export const MAP_DESTINATIONS: MapDestination[] = [
     },
     category: 'historical',
     coordinates: [10.9705, 106.8042],
-    image: '/images/chua-quang-minh-thap.jpg',
+    image: '/images/van-mieu-tran-bien.jpg',
     address: {
       vi: 'Phường Bửu Long, TP. Biên Hòa, Tỉnh Đồng Nai',
       en: 'Buu Long Ward, Bien Hoa City, Dong Nai Province',
@@ -29,7 +29,7 @@ export const MAP_DESTINATIONS: MapDestination[] = [
     },
     category: 'historical',
     coordinates: [10.9525, 106.8180],
-    image: '/images/chua-quang-minh-tamquan.jpg',
+    image: '/images/thanh-co-bien-hoa.jpg',
     address: {
       vi: 'Đường Phan Chu Trinh, Phường Quang Vinh (sau sáp nhập), TP. Biên Hòa',
       en: 'Phan Chu Trinh St, Quang Vinh Ward, Bien Hoa City',
@@ -40,25 +40,6 @@ export const MAP_DESTINATIONS: MapDestination[] = [
       en: 'The oldest surviving Nguyen Dynasty laterite military fortress in the South.',
     },
     landmarkRefId: 'thanh-co-bien-hoa',
-  },
-  {
-    id: 'chua-quang-minh',
-    name: {
-      vi: 'Chùa Quang Minh Biên Hòa',
-      en: 'Quang Minh Buddhist Pagoda',
-    },
-    category: 'historical',
-    coordinates: [10.9580, 106.8210],
-    image: '/images/chua-quang-minh-tamquan.jpg',
-    address: {
-      vi: 'Đường Nguyễn Ái Quốc, Phường Tân Tiến, TP. Biên Hòa',
-      en: 'Nguyen Ai Quoc St, Tan Tien Ward, Bien Hoa City',
-    },
-    distanceFromHcmc: '31 km (khoảng 40 phút)',
-    shortSummary: {
-      vi: 'Cổ tự tráng lệ với cổng Tam Quan lộng lẫy và bảo tháp nhiều tầng uy nghiêm giữa lòng đô thị.',
-      en: 'Sacred Buddhist temple featuring a majestic triple-arched gate and multi-tiered pagoda stupa.',
-    },
   },
   {
     id: 'khu-du-lich-buu-long',
@@ -90,8 +71,8 @@ export const MAP_DESTINATIONS: MapDestination[] = [
     coordinates: [11.4239, 107.4293],
     image: '/images/cattien-cong-chinh.jpg',
     address: {
-      vi: 'Huyện Tân Phú & Vĩnh Cửu, Tỉnh Đồng Nai (giáp ranh đại ngàn Bù Gia Mập)',
-      en: 'Tan Phu District, Dong Nai Province (bordering Bu Gia Map highland forests)',
+      vi: 'Huyện Tân Phú & Vĩnh Cửu, Tỉnh Đồng Nai',
+      en: 'Tan Phu & Vinh Cuu Districts, Dong Nai Province',
     },
     distanceFromHcmc: '150 km (khoảng 3 giờ lái xe)',
     shortSummary: {
@@ -99,25 +80,6 @@ export const MAP_DESTINATIONS: MapDestination[] = [
       en: 'UNESCO Biosphere Reserve, giant Tung trees, pristine cycling trails and wild gaur herds.',
     },
     landmarkRefId: 'vuon-quoc-gia-cat-tien',
-  },
-  {
-    id: 'vuon-quoc-gia-bu-gia-map',
-    name: {
-      vi: 'Vườn Quốc Gia Bù Gia Mập (Vùng Sinh Thái Giáp Ranh)',
-      en: 'Bu Gia Map National Park (Bordering Eco-Zone)',
-    },
-    category: 'natural',
-    coordinates: [11.9667, 107.2000],
-    image: '/images/bu-gia-map-cong.jpg',
-    address: {
-      vi: 'Vùng đệm rừng nguyên sinh tiếp giáp Bắc Đồng Nai - Đông Nam Bộ',
-      en: 'Primary evergreen rainforest bordering Northern Dong Nai',
-    },
-    distanceFromHcmc: '180 km (khoảng 3 giờ 45 phút)',
-    shortSummary: {
-      vi: 'Lá phổi xanh nguyên sinh của Đông Nam Bộ với thảm thực vật phong phú và dòng suối hoang sơ.',
-      en: 'Pristine highland ecological corridor with rich biodiversity and cascading forest waterfalls.',
-    },
   },
   {
     id: 'thac-giang-dien',
@@ -130,20 +92,20 @@ export const MAP_DESTINATIONS: MapDestination[] = [
     image: '/images/giang-dien-thac.jpg',
     address: {
       vi: 'Xã Giang Điền, Huyện Trảng Bom, Tỉnh Đồng Nai',
-      en: 'Giang Dien Commune, Trang Bom District, Dong Nai Province',
+      en: 'Giang Dien Commune, Trang Bom District, Dong Nai',
     },
     distanceFromHcmc: '45 km (khoảng 1 giờ lái xe)',
     shortSummary: {
-      vi: 'Dòng thác ba nhánh hùng vĩ đổ qua ghềnh đá bazan và cổng chào sinh thái rực rỡ.',
-      en: 'Majestic three-tier waterfall cascading over basalt shelves with festive park grounds.',
+      vi: 'Dòng thác ba nhánh huyền thoại Thác Chàng - Thác Nàng tung bọt trắng xóa giữa thiên nhiên xanh ngát.',
+      en: 'Legendary three-tiered cascading waterfall tumbling over volcanic rock shelves.',
     },
     landmarkRefId: 'thac-giang-dien',
   },
   {
-    id: 'ho-tri-an-dao-o',
+    id: 'ho-tri-an',
     name: {
-      vi: 'Hồ Trị An & Đảo Ó - Đồng Trường',
-      en: 'Tri An Lake & O Island Nature Camp',
+      vi: 'Hồ Trị An & Rừng Chiến Khu Đ',
+      en: 'Tri An Lake & War Zone D Nature',
     },
     category: 'natural',
     coordinates: [11.1350, 107.0350],
@@ -159,33 +121,14 @@ export const MAP_DESTINATIONS: MapDestination[] = [
     },
   },
   {
-    id: 'nui-chua-chan',
-    name: {
-      vi: 'Quần Thể Núi Chứa Chan & Chùa Gia Lào',
-      en: 'Chua Chan Mountain & Gia Lao Pagoda',
-    },
-    category: 'natural',
-    coordinates: [10.9633, 107.3783],
-    image: '/images/buulong-cau-treo.jpg',
-    address: {
-      vi: 'Xã Xuân Trường, Huyện Xuân Lộc, Tỉnh Đồng Nai',
-      en: 'Xuan Truong Commune, Xuan Loc District, Dong Nai',
-    },
-    distanceFromHcmc: '95 km (khoảng 2 giờ lái xe)',
-    shortSummary: {
-      vi: '"Đệ nhị thiên sơn" Nam Bộ cao 837m, chốn bồng lai tiên cảnh với cây da ba gốc linh thiêng.',
-      en: 'Second highest peak in the South (837m), featuring sacred cliffside temples and panoramic vistas.',
-    },
-  },
-  {
     id: 'tho-cam-mnong',
     name: {
-      vi: 'Không Gian Thổ Cẩm M’Nông (Di Sản Quốc Gia)',
+      vi: 'Nghề Dệt Thổ Cẩm M’Nông (Di Sản Quốc Gia)',
       en: "M'Nong Brocade Weaving Cultural Space",
     },
     category: 'craft',
     coordinates: [11.3850, 107.3820],
-    image: '/images/cattien-suong-mai.jpg',
+    image: '/images/tho-cam-mnong.jpg',
     address: {
       vi: 'Vùng đệm rừng Cát Tiên, Huyện Tân Phú, Tỉnh Đồng Nai',
       en: 'Cat Tien Buffer Zone, Tan Phu District, Dong Nai',
@@ -204,7 +147,7 @@ export const MAP_DESTINATIONS: MapDestination[] = [
     },
     category: 'craft',
     coordinates: [10.9412, 106.8291],
-    image: '/images/chua-quang-minh-thap.jpg',
+    image: '/images/gom-bien-hoa.jpg',
     address: {
       vi: 'Phường Tân Vạn & Hóa An, TP. Biên Hòa',
       en: 'Tan Van & Hoa An Wards, Bien Hoa City',
@@ -223,7 +166,7 @@ export const MAP_DESTINATIONS: MapDestination[] = [
     },
     category: 'cuisine',
     coordinates: [10.9850, 106.7820],
-    image: '/images/buulong-cau-treo.jpg',
+    image: '/images/buoi-tan-trieu.jpg',
     address: {
       vi: 'Cù lao Tân Triều, Xã Tân Bình, Huyện Vĩnh Cửu',
       en: 'Tan Trieu Islet, Tan Binh Commune, Vinh Cuu District',
@@ -237,12 +180,12 @@ export const MAP_DESTINATIONS: MapDestination[] = [
   {
     id: 'vung-dieu-dong-nai',
     name: {
-      vi: 'Thủ Phủ Cây Điều Đồng Nai (Hạt Điều Rang Muối)',
+      vi: 'Thủ Phủ Hạt Điều Đồng Nai',
       en: 'Dong Nai Cashew Capital (Roasted Cashews)',
     },
     category: 'cuisine',
     coordinates: [11.1250, 107.1820],
-    image: '/images/giang-dien-cong.jpg',
+    image: '/images/hat-dieu-dong-nai.jpg',
     address: {
       vi: 'Huyện Định Quán, Xuân Lộc & Thống Nhất',
       en: 'Dinh Quan, Xuan Loc & Thong Nhat Districts',
@@ -251,6 +194,25 @@ export const MAP_DESTINATIONS: MapDestination[] = [
     shortSummary: {
       vi: 'Vùng đất đỏ bazan bạt ngàn cây điều, nông sản vàng đạt chuẩn OCOP xuất khẩu toàn cầu.',
       en: 'Basalt plateau cashew orchards producing world-renowned crispy roasted salted cashews.',
+    },
+  },
+  {
+    id: 'xoi-chien-phong-bien-hoa',
+    name: {
+      vi: 'Xôi Chiên Phồng Biên Hòa',
+      en: 'Bien Hoa Fried Puffed Sticky Rice',
+    },
+    category: 'cuisine',
+    coordinates: [10.9500, 106.8200],
+    image: '/images/xoi-chien-phong.jpg',
+    address: {
+      vi: 'TP. Biên Hòa, Tỉnh Đồng Nai',
+      en: 'Bien Hoa City, Dong Nai Province',
+    },
+    distanceFromHcmc: '30 km (khoảng 40 phút)',
+    shortSummary: {
+      vi: 'Đặc sản ẩm thực đạt Kỷ lục Châu Á với quả cầu xôi phồng vàng giòn rụm bên ngoài dẻo ngọt bên trong.',
+      en: 'Asian Record culinary masterpiece with golden puffed sticky rice globes.',
     },
   },
 ];
