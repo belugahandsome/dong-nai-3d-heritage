@@ -200,12 +200,12 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onEnterSite }) =
       <div className="absolute bottom-0 left-0 right-0 z-20 pointer-events-none p-6 md:p-12 flex flex-col md:flex-row md:items-end justify-between gap-6 bg-gradient-to-t from-[#04100B] via-[#04100B]/80 to-transparent">
         {/* Title and Vietnamese subtitle */}
         <div className="max-w-xl pointer-events-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-heritage-gold/20 border border-heritage-gold/40 text-heritage-gold-light text-xs font-semibold mb-3">
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>
-              {language === 'vi'
-                ? `Đang tiêu điểm: ${currentHighlight.name.vi}`
-                : `Focusing on: ${currentHighlight.name.en}`}
+          <div className="flex flex-wrap items-center gap-2 mb-3">
+            <span className="px-3.5 py-1 rounded-full bg-gradient-to-r from-heritage-gold/30 via-yellow-400/20 to-heritage-gold/30 border border-heritage-gold text-heritage-gold text-xs font-bold uppercase tracking-widest shadow-glow-gold">
+              "OUR CULTURE, OUR FUTURE"
+            </span>
+            <span className="text-xs text-heritage-ivory/70 italic hidden sm:inline">
+              | {language === 'vi' ? `Tiêu điểm: ${currentHighlight.name.vi}` : `Focusing: ${currentHighlight.name.en}`}
             </span>
           </div>
 

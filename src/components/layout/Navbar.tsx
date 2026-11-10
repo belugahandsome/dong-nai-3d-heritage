@@ -57,8 +57,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenIntro }) => {
                 3D
               </span>
             </div>
-            <span className="text-[10px] tracking-widest uppercase text-heritage-ivory/60 block font-light">
-              {t('BẢO TÀNG DI SẢN KỸ THUẬT SỐ', 'DIGITAL HERITAGE MUSEUM')}
+            <span className="text-[10px] tracking-widest uppercase text-heritage-gold font-medium block">
+              "OUR CULTURE, OUR FUTURE"
             </span>
           </div>
         </a>

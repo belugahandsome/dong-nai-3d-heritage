@@ -19,7 +19,10 @@ export const Footer: React.FC = () => {
                 <span className="font-serif font-bold text-xl text-heritage-ivory tracking-wider block">
                   ĐỒNG NAI 3D HERITAGE
                 </span>
-                <span className="text-[10px] tracking-widest uppercase text-heritage-gold font-semibold">
+                <span className="text-[11px] tracking-widest uppercase text-heritage-gold font-bold block mt-0.5">
+                  "OUR CULTURE, OUR FUTURE"
+                </span>
+                <span className="text-[10px] tracking-widest uppercase text-heritage-ivory/60 font-medium block">
                   {t('KHÔNG GIAN TRẢI NGHIỆM DU LỊCH VĂN HÓA KỸ THUẬT SỐ', 'DIGITAL CULTURAL TOURISM EXPERIENCE')}
                 </span>
               </div>

@@ -21,15 +21,18 @@ export const Hero: React.FC<HeroProps> = ({ onOpenIntro, onExploreHeritage }) =>
       <div className="absolute bottom-10 left-10 w-96 h-96 bg-emerald-600/10 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center flex flex-col items-center">
-        {/* Editorial Subtitle Pill */}
+        {/* Official Slogan Pill: OUR CULTURE, OUR FUTURE */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-heritage-gold/15 border border-heritage-gold/40 text-heritage-gold-light text-xs font-semibold uppercase tracking-widest mb-6 shadow-glow-gold"
+          className="inline-flex items-center gap-2.5 px-6 py-2 rounded-full bg-gradient-to-r from-heritage-gold/25 via-yellow-400/20 to-heritage-gold/25 border-2 border-heritage-gold text-heritage-gold text-xs sm:text-sm font-bold uppercase tracking-widest mb-6 shadow-glow-gold"
         >
-          <Compass className="w-4 h-4 text-heritage-gold animate-spin-slow" />
-          <span>{t('BẢO TÀNG KỸ THUẬT SỐ & DU LỊCH VĂN HÓA 3D', 'DIGITAL MUSEUM & 3D CULTURAL TOURISM')}</span>
+          <Sparkles className="w-4 h-4 text-heritage-gold animate-pulse" />
+          <span>"OUR CULTURE, OUR FUTURE"</span>
+          <span className="text-white/80 font-normal hidden md:inline">
+            | {t('Di sản của chúng ta, Tương lai của chúng ta', 'Our Heritage, Our Future')}
+          </span>
         </motion.div>
 
         {/* Main Editorial Headline */}

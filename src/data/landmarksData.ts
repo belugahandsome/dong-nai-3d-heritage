@@ -14,25 +14,25 @@ export const LANDMARKS: Landmark[] = [
     },
     category: 'historical',
     location: {
-      vi: 'Phường Bửu Long, Thành phố Biên Hòa, Tỉnh Đồng Nai',
+      vi: 'Phường Bửu Long, TP. Biên Hòa, Tỉnh Đồng Nai (trung tâm kết nối văn hóa đô thị)',
       en: 'Buu Long Ward, Bien Hoa City, Dong Nai Province',
     },
     established: '1715 (thời Chúa Nguyễn Phúc Chu)',
     coordinates: [10.9705, 106.8042],
-    heroImage: 'https://images.unsplash.com/photo-1599827552599-ea16053f3e1b?auto=format&fit=crop&w=1600&q=80',
+    heroImage: '/images/chua-quang-minh-thap.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1599827552599-ea16053f3e1b?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=80'
+      '/images/chua-quang-minh-thap.jpg',
+      '/images/chua-quang-minh-tamquan.jpg',
+      '/images/buulong-hoang-hon.jpg',
+      '/images/buulong-cau-treo.jpg',
     ],
     shortDesc: {
-      vi: 'Văn miếu Trấn Biên là văn miếu đầu tiên được xây dựng tại xứ Đàng Trong vào năm 1715, tiêu biểu cho truyền thống hiếu học, tôn sư trọng đạo và tinh thần khai hoang mở cõi của dân tộc.',
+      vi: 'Văn miếu Trấn Biên là văn miếu đầu tiên được xây dựng tại xứ Đàng Trong vào năm 1715, tiêu biểu cho truyền thống hiếu học, tôn sư trọng đạo và tinh thần khai hoang mở cõi hơn 325 năm của Đồng Nai.',
       en: 'Tran Bien Temple of Literature was the first Confucian temple founded in Southern Vietnam in 1715, embodying the veneration of scholarship, education, and pioneering spirit.',
     },
     fullDesc: {
-      vi: 'Nằm tọa lạc trên vùng đất đồi cao thoai thoải thuộc phường Bửu Long, Văn Miếu Trấn Biên soi bóng xuống hồ nước trong xanh. Được xây dựng dưới thời chúa Nguyễn Phúc Chu (năm 1715), đây là nơi thờ phụng Khổng Tử cùng các danh nhân văn hóa, hiền triết Việt Nam như Chu Văn An, Nguyễn Trãi, Lê Quý Đôn, Võ Trường Toản và Lễ Thành Hầu Nguyễn Hữu Cảnh. Trải qua thăng trầm lịch sử và sự tàn phá thời kỳ thực dân, Văn miếu được phục dựng uy nghiêm vào năm 1998 nhân kỷ niệm 300 năm Biên Hòa - Đồng Nai và được xếp hạng Di tích Lịch sử cấp Quốc gia vào năm 2016.',
-      en: 'Perched upon a scenic hilltop in Buu Long Ward overlooking a tranquil lake, Tran Bien Temple of Literature was commissioned in 1715 by Lord Nguyen Phuc Chu. It venerates Confucius alongside towering Vietnamese scholars such as Chu Van An, Nguyen Trai, Le Quy Don, Vo Truong Toan, and Marshal Nguyen Huu Canh. Reconstructed faithfully in 1998 celebrating 300 years of Bien Hoa - Dong Nai, it was designated as a National Historical Relic in 2016.',
+      vi: 'Tọa lạc trên đồi cao thoai thoải thuộc phường Bửu Long, Văn Miếu Trấn Biên soi bóng xuống hồ nước trong xanh. Được xây dựng dưới thời chúa Nguyễn Phúc Chu (năm 1715), đây là nơi phụng thờ Khổng Tử cùng các danh nhân văn hóa, hiền triết Việt Nam như Chu Văn An, Nguyễn Trãi, Lê Quý Đôn, Võ Trường Toản và Lễ Thành Hầu Nguyễn Hữu Cảnh. Quần thể kết nối hài hòa cùng các kiến trúc Phật giáo tâm linh uy nghiêm như Chùa Quang Minh và Chùa Bửu Phong, được xếp hạng Di tích Lịch sử cấp Quốc gia năm 2016.',
+      en: 'Perched upon a scenic hilltop in Buu Long Ward overlooking a tranquil lake, Tran Bien Temple of Literature was commissioned in 1715 by Lord Nguyen Phuc Chu. It venerates Confucius alongside towering Vietnamese scholars such as Chu Van An, Nguyen Trai, Le Quy Don, Vo Truong Toan, and Marshal Nguyen Huu Canh. It stands alongside sacred Buddhist architectures including Quang Minh Pagoda, designated as a National Historical Relic in 2016.',
     },
     historicalSignificance: {
       vi: 'Được mệnh danh là "Quốc Tử Giám của phương Nam", Văn miếu Trấn Biên ra đời sớm hơn cả Văn miếu Huế và là cột mốc khẳng định chủ quyền văn hóa dân tộc tại vùng đất phương Nam màu mỡ.',
@@ -58,16 +58,9 @@ export const LANDMARKS: Landmark[] = [
         },
       },
       {
-        year: '1861',
-        event: {
-          vi: 'Thực dân Pháp đánh chiếm Biên Hòa và tàn phá công trình Văn miếu cổ.',
-          en: 'French colonial forces captured Bien Hoa and destroyed the original complex.',
-        },
-      },
-      {
         year: '1998',
         event: {
-          vi: 'Khởi công tái thiết toàn diện Văn miếu trên diện tích gần 15 hecta nhân kỷ niệm 300 năm Biên Hòa.',
+          vi: 'Khởi công tái thiết toàn diện Văn miếu trên diện tích gần 15 hecta nhân kỷ niệm 300 năm Biên Hòa - Đồng Nai.',
           en: 'Comprehensive reconstruction began on 15 hectares marking the 300th anniversary of Bien Hoa.',
         },
       },
@@ -128,20 +121,8 @@ export const LANDMARKS: Landmark[] = [
           en: 'The sacred heart enshrining Confucius, national heroes, and southern pioneer scholars.',
         },
       },
-      {
-        id: 'ho-thien-quang',
-        position: [-2.5, 0.4, 1.5],
-        title: {
-          vi: 'Hồ Tịnh Quang',
-          en: 'Serene Reflection Lake',
-        },
-        description: {
-          vi: 'Hồ nước trong biếc phản chiếu mây trời và bóng thông reo, mang lại sự thanh tịnh cho tâm hồn du khách.',
-          en: 'Mirror-like lotus lake reflecting ancient pines, fostering tranquility and spiritual reflection.',
-        },
-      },
     ],
-    panoUrl: 'https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=2400&q=80',
+    panoUrl: '/images/chua-quang-minh-tamquan.jpg',
   },
   {
     id: 'thanh-co-bien-hoa',
@@ -156,23 +137,23 @@ export const LANDMARKS: Landmark[] = [
     },
     category: 'historical',
     location: {
-      vi: 'Phường Quang Vinh, Thành phố Biên Hòa, Tỉnh Đồng Nai',
+      vi: 'Phường Quang Vinh (sau sắp xếp sáp nhập đơn vị hành chính), TP. Biên Hòa, Tỉnh Đồng Nai',
       en: 'Quang Vinh Ward, Bien Hoa City, Dong Nai Province',
     },
     established: '1790 (Thành Kèn) & 1834 (Minh Mạng xây bằng đá ong)',
     coordinates: [10.9525, 106.8180],
-    heroImage: 'https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=1600&q=80',
+    heroImage: '/images/chua-quang-minh-tamquan.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1599827552599-ea16053f3e1b?auto=format&fit=crop&w=1200&q=80'
+      '/images/chua-quang-minh-tamquan.jpg',
+      '/images/chua-quang-minh-thap.jpg',
+      '/images/buulong-hoang-hon.jpg',
     ],
     shortDesc: {
-      vi: 'Thành cổ Biên Hòa là công trình phòng thủ quân sự cổ kính duy nhất thời Nguyễn còn sót lại tại Nam Bộ, chứng tích oai hùng của lịch sử kháng chiến giữ nước qua nhiều thời kỳ.',
+      vi: 'Thành cổ Biên Hòa (Thành Kèn) là công trình phòng thủ quân sự cổ kính duy nhất thời Nguyễn còn sót lại tại Nam Bộ, chứng tích oai hùng của lịch sử kháng chiến giữ nước qua nhiều thời kỳ.',
       en: 'Bien Hoa Ancient Citadel is the sole surviving Nguyen Dynasty military fortification in Southern Vietnam, a monumental testament to regional defense and heroic resistance history.',
     },
     fullDesc: {
-      vi: 'Thành cổ Biên Hòa, dân gian quen gọi là Thành Kèn, có nguồn gốc từ năm 1790 khi Nguyễn Ánh xây dựng thành đất. Đến năm 1834, vua Minh Mạng cho đại trùng tu kiên cố bằng đá ong và gạch thẻ theo đồ án kiến trúc quân sự Vauban phòng thủ với 4 cửa mở ra 4 hướng. Tòa thành từng chứng kiến những trận chiến ác liệt chống thực dân Pháp thế kỷ XIX, phong trào khởi nghĩa yêu nước của Trương Định, Nguyễn Tri Phương và là căn cứ quân sự quan trọng trong hai cuộc kháng chiến chống Pháp và chống Mỹ.',
+      vi: 'Thành cổ Biên Hòa có nguồn gốc từ năm 1790 khi Nguyễn Ánh xây dựng thành đất. Đến năm 1834, vua Minh Mạng cho đại trùng tu kiên cố bằng đá ong và gạch thẻ theo đồ án kiến trúc quân sự Vauban phòng thủ với 4 cửa mở ra 4 hướng. Tòa thành từng chứng kiến những trận chiến ác liệt chống thực dân Pháp thế kỷ XIX, phong trào khởi nghĩa yêu nước của Trương Định, Nguyễn Tri Phương và là căn cứ quân sự quan trọng trong hai cuộc kháng chiến chống Pháp và chống Mỹ.',
       en: 'Colloquially known as "Thanh Ken" (Trumpet Citadel), it originated in 1790 as an earthen fort built by Nguyen Anh. In 1834, Emperor Minh Mang fortified it into a formidable Vauban-style citadel constructed from laterite stone and kiln brick with four cardinal gates. It bore witness to fierce 19th-century anti-colonial battles and stands as a National Historical Monument recognized in 2013.',
     },
     historicalSignificance: {
@@ -199,13 +180,6 @@ export const LANDMARKS: Landmark[] = [
         },
       },
       {
-        year: '1861',
-        event: {
-          vi: 'Quân Pháp chiếm đóng thành Biên Hòa, thu hẹp diện tích và biến thành căn cứ binh sĩ.',
-          en: 'French troops occupied Bien Hoa citadel, resizing it as a garrison post.',
-        },
-      },
-      {
         year: '2013',
         event: {
           vi: 'Được xếp hạng Di tích Lịch sử cấp Quốc gia, khởi động các đề án trùng tu bảo tồn.',
@@ -220,8 +194,8 @@ export const LANDMARKS: Landmark[] = [
         en: 'Free admission',
       },
       bestTimeToVisit: {
-        vi: 'Các buổi sáng trong tuần, thích hợp cho người yêu nghiên cứu lịch sử và nhiếp ảnh cổ điển',
-        en: 'Weekday mornings, ideal for history enthusiasts, students, and vintage photography',
+        vi: 'Các buổi sáng trong tuần, thích hợp cho người yêu nghiên cứu lịch sử và học sinh sinh viên',
+        en: 'Weekday mornings, ideal for history enthusiasts and students',
       },
     },
     modelType: 'thanh-co',
@@ -250,20 +224,8 @@ export const LANDMARKS: Landmark[] = [
           en: 'Emplacements holding historical bronze cannons aimed towards Dong Nai river to control maritime trade and defense.',
         },
       },
-      {
-        id: 'cong-thanh',
-        position: [0, 1.8, 2.5],
-        title: {
-          vi: 'Cổng Tiền cổ kính',
-          en: 'Historical Front Gateway',
-        },
-        description: {
-          vi: 'Cổng thành vòm cuốn đặc sắc kết hợp hoa văn kiến trúc phong kiến và bổ sung thời cận đại.',
-          en: 'Arched vaulted brick gate blending imperial aesthetics with 19th-century military reinforcements.',
-        },
-      },
     ],
-    panoUrl: 'https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=2400&q=80',
+    panoUrl: '/images/chua-quang-minh-thap.jpg',
   },
   {
     id: 'khu-du-lich-buu-long',
@@ -278,24 +240,25 @@ export const LANDMARKS: Landmark[] = [
     },
     category: 'natural',
     location: {
-      vi: 'Đường Huỳnh Văn Nghệ, Khu phố 4, Phường Bửu Long, TP. Biên Hòa, Đồng Nai',
-      en: 'Huynh Van Nghe St., Quarter 4, Buu Long Ward, Bien Hoa City, Dong Nai',
+      vi: 'Đường Huỳnh Văn Nghệ, Phường Bửu Long, TP. Biên Hòa, Tỉnh Đồng Nai',
+      en: 'Huynh Van Nghe St., Buu Long Ward, Bien Hoa City, Dong Nai',
     },
     established: 'Di tích Danh thắng Quốc gia công nhận năm 1990',
     coordinates: [10.9650, 106.7989],
-    heroImage: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80',
+    heroImage: '/images/buulong-hoang-hon.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80'
+      '/images/buulong-hoang-hon.jpg',
+      '/images/buulong-thuyen-thien-nga.jpg',
+      '/images/buulong-cau-treo.jpg',
+      '/images/chua-quang-minh-tamquan.jpg',
     ],
     shortDesc: {
-      vi: 'Bửu Long sở hữu bức tranh thủy mặc kỳ vĩ với hồ Long Ẩn trong veo, những mỏm đá vôi vươn thẳng giữa mặt nước và ngôi cổ tự Bửu Phong u tịch nép mình trên đỉnh núi.',
-      en: 'Buu Long features an enchanting landscape with Long An Lake, majestic karst limestone towers emerging from clear emerald waters, and ancient Buu Phong Pagoda perched atop the cliffs.',
+      vi: 'Bửu Long sở hữu bức tranh thủy mặc kỳ vĩ với hồ Long Ẩn trong veo, những mỏm đá vôi vươn thẳng giữa mặt nước, bến thuyền đạp vịt và cầu phao hoàng hôn rực rỡ.',
+      en: 'Buu Long features an enchanting landscape with Long An Lake, majestic karst limestone towers emerging from clear emerald waters, and footbridges across romantic waters.',
     },
     fullDesc: {
-      vi: 'Trải rộng trên diện tích 84 hecta quanh hai hồ nước nhân tạo kỳ vĩ là hồ Long Ẩn và hồ Long Vân, Khu du lịch Bửu Long được ví như "Vịnh Hạ Long thu nhỏ của miền Đông Nam Bộ". Nơi đây hòa quyện hài hòa giữa núi non điệp trùng, hồ nước mênh mông, thảm thực vật xanh mát và các công trình tâm linh linh thiêng như Chùa Bửu Phong có từ thế kỷ XVII. Du khách đến đây có thể du thuyền đạp vịt trên hồ, dạo bước qua cầu tình yêu, khám phá Bán đảo Long Sơn và chiêm ngưỡng toàn cảnh sông Đồng Nai thơ mộng.',
-      en: 'Encompassing over 84 hectares around Long An and Long Van reflection lakes, Buu Long is celebrated as a miniature Ha Long Bay in the South. It harmoniously combines soaring limestone peaks, sparkling waters, lush forests, and sacred landmarks like 17th-century Buu Phong Pagoda. Visitors can paddle across the tranquil lake, wander romantic footbridges, explore Long Son Peninsula, and admire panoramic vistas of the winding Dong Nai River.',
+      vi: 'Trải rộng trên diện tích 84 hecta quanh hai hồ nước kỳ vĩ là hồ Long Ẩn và hồ Long Vân, Khu du lịch Bửu Long được ví như "Vịnh Hạ Long thu nhỏ của miền Đông Nam Bộ". Nơi đây hòa quyện hài hòa giữa núi non điệp trùng, hồ nước mênh mông, thảm thực vật xanh mát và các công trình tâm linh linh thiêng như Chùa Cổ Bửu Phong (thế kỷ XVII), Chùa Quang Minh. Du khách đến đây có thể du thuyền đạp vịt trên hồ, dạo bước qua cầu phao tình yêu ngắm hoàng hôn rực rỡ, khám phá Bán đảo Long Sơn và chiêm ngưỡng toàn cảnh sông Đồng Nai thơ mộng.',
+      en: 'Encompassing over 84 hectares around Long An and Long Van reflection lakes, Buu Long is celebrated as a miniature Ha Long Bay in the South. It harmoniously combines soaring limestone peaks, sparkling waters, lush forests, and sacred landmarks like 17th-century Buu Phong Pagoda and Quang Minh Pagoda. Visitors can paddle swan boats, cross sunset pontoon bridges, and admire panoramic vistas of the winding Dong Nai River.',
     },
     historicalSignificance: {
       vi: 'Vừa là thắng cảnh tự nhiên nổi tiếng được xếp hạng Di tích Danh thắng Quốc gia từ năm 1990, vừa gắn liền với di chỉ khảo cổ học Bình Đa và bề dày khai hoang lập nghiệp của cư dân Đồng Nai xưa.',
@@ -312,7 +275,7 @@ export const LANDMARKS: Landmark[] = [
         en: 'Adult: 150,000 VND | Child: 60,000 VND (all-inclusive package)',
       },
       bestTimeToVisit: {
-        vi: 'Mùa khô từ tháng 11 đến tháng 4; thời điểm bình minh và hoàng hôn chụp ảnh đẹp nhất',
+        vi: 'Mùa khô từ tháng 11 đến tháng 4; thời điểm bình minh và hoàng hôn chụp ảnh hồ Long Ẩn đẹp nhất',
         en: 'Dry season from November to April; dawn and sunset offer the most picturesque lighting',
       },
     },
@@ -322,12 +285,12 @@ export const LANDMARKS: Landmark[] = [
         id: 'ho-long-an',
         position: [0, 0.2, 0],
         title: {
-          vi: 'Hồ Long Ẩn (Rồng Ẩn)',
-          en: 'Long An Lake (Hidden Dragon)',
+          vi: 'Hồ Long Ẩn & Bến Thuyền Thiên Nga',
+          en: 'Long An Lake & Swan Boats',
         },
         description: {
-          vi: 'Mặt hồ phẳng lặng như gương rộng gần 20 hecta, soi bóng những vách đá dựng đứng kỳ vĩ.',
-          en: 'Mirror-calm freshwater lake spanning 20 hectares reflecting towering granite monoliths.',
+          vi: 'Mặt hồ phẳng lặng như gương rộng gần 20 hecta với các bến thuyền đạp vịt và cầu phao hoa đăng tuyệt đẹp.',
+          en: 'Mirror-calm freshwater lake spanning 20 hectares with recreational paddle boats and pontoon bridges.',
         },
       },
       {
@@ -342,20 +305,8 @@ export const LANDMARKS: Landmark[] = [
           en: 'Majestic rock pillars sculpted by nature over millions of years of geological evolution.',
         },
       },
-      {
-        id: 'chua-buu-phong',
-        position: [2.2, 2.8, -1.5],
-        title: {
-          vi: 'Chùa Cổ Bửu Phong',
-          en: 'Ancient Buu Phong Pagoda',
-        },
-        description: {
-          vi: 'Ngôi cổ tự lập từ năm 1679 tọa lạc trên sườn núi rợp bóng cây bồ đề và tùng bách cổ thụ.',
-          en: 'Sacred Buddhist temple established in 1679 perched amid Bodhi trees on the high cliff crest.',
-        },
-      },
     ],
-    panoUrl: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=2400&q=80',
+    panoUrl: '/images/buulong-hoang-hon.jpg',
   },
   {
     id: 'vuon-quoc-gia-cat-tien',
@@ -370,25 +321,29 @@ export const LANDMARKS: Landmark[] = [
     },
     category: 'natural',
     location: {
-      vi: 'Huyện Tân Phú & Vĩnh Cửu, Tỉnh Đồng Nai (Trung tâm điều hành tại Tân Phú)',
-      en: 'Tan Phu & Vinh Cuu Districts, Dong Nai Province (HQ in Tan Phu District)',
+      vi: 'Huyện Tân Phú & Vĩnh Cửu, Tỉnh Đồng Nai (tiếp giáp vùng sinh thái Bù Gia Mập & Nam Cát Tiên)',
+      en: 'Tan Phu & Vinh Cuu Districts, Dong Nai Province (bordering Bu Gia Map ecological zone)',
     },
     established: 'UNESCO công nhận Khu Dự trữ Sinh quyển năm 2001 & Di tích Quốc gia Đặc biệt 2012',
     coordinates: [11.4239, 107.4293],
-    heroImage: 'https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1600&q=80',
+    heroImage: '/images/cattien-cong-chinh.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1511497584788-87676104235f?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1574063413132-355dbfd83e25?auto=format&fit=crop&w=1200&q=80'
+      '/images/cattien-cong-chinh.jpg',
+      '/images/cattien-cay-tung.jpg',
+      '/images/cattien-bo-tot.jpg',
+      '/images/cattien-dap-xe.jpg',
+      '/images/cattien-ho-xanh.jpg',
+      '/images/cattien-suoi.jpg',
+      '/images/cattien-suong-mai.jpg',
+      '/images/bu-gia-map-cong.jpg',
     ],
     shortDesc: {
-      vi: 'Cát Tiên là lá phổi xanh khổng lồ của miền Nam, nơi bảo tồn hệ động thực vật nhiệt đới nguyên sinh trù phú bậc nhất Đông Nam Á cùng vùng đất ngập nước Bàu Sấu danh tiếng.',
-      en: 'Cat Tien is Southern Vietnam’s colossal green lung, conserving one of Southeast Asia’s richest tropical rainforest ecosystems and the Ramsar-recognized Bau Sau wetlands.',
+      vi: 'Cát Tiên là lá phổi xanh khổng lồ của miền Nam, nơi bảo tồn bầy bò tót hoang dã, cây Tung cổ thụ nghìn năm tuổi, dòng suối trong vắt và tuyến đường đạp xe xuyên rừng kỳ thú.',
+      en: 'Cat Tien is Southern Vietnam’s colossal green lung, conserving wild gaur herds, ancient Tung trees, crystal rainforest streams, and pristine cycling trails.',
     },
     fullDesc: {
-      vi: 'Với diện tích hơn 71.000 hecta, Vườn quốc gia Cát Tiên là một trong những khu bảo tồn thiên nhiên quan trọng nhất Việt Nam và thế giới. Nơi đây sở hữu hàng ngàn loài thực vật gỗ quý, cây Tung đại thụ hơn 500 năm tuổi với bộ rễ khổng lồ cao bằng hai tầng nhà, cùng quần thể động vật phong phú gồm voi châu Á, bò tót khổng lồ, voọc chà vá chân đen, và cá sấu xiêm tại đầm lầy Bàu Sấu. Du khách có thể trải nghiệm tour ngắm thú đêm hoang dã, trekking xuyên rừng nguyên sinh, đi cano vượt ghềnh Bến Cự và khám phá văn hóa các dân tộc bản địa Mạ, Stiêng.',
-      en: 'Covering more than 71,000 hectares, Cat Tien National Park is among the foremost biosphere reserves globally. It shelters thousands of rare flora species including a 500-year-old giant Tung tree whose buttress roots soar over two storeys, and vital populations of Asian elephants, wild gaurs, black-shanked douc langurs, and Siamese crocodiles at Bau Sau Lake. Visitors can embark on night safari tours, rainforest treks, canoe expeditions along Ben Cu rapids, and immerse in ethnic Ma and Stieng heritage.',
+      vi: 'Với diện tích hơn 71.000 hecta, Vườn quốc gia Cát Tiên là một trong những khu bảo tồn thiên nhiên quan trọng nhất thế giới. Nơi đây sở hữu hàng ngàn loài thực vật gỗ quý, cây Tung đại thụ với bộ rễ bạnh vè khổng lồ cao vút, cùng quần thể động vật hoang dã quý hiếm gồm bầy bò tót khổng lồ, voi châu Á, voọc chà vá chân đen, và cá sấu xiêm tại đầm lầy Bàu Sấu. Vùng đệm sinh thái tiếp giáp đại ngàn Bù Gia Mập tạo nên hành lang bảo tồn đa dạng sinh học vô giá.',
+      en: 'Covering more than 71,000 hectares, Cat Tien National Park is among the foremost biosphere reserves globally. It shelters thousands of rare flora species including colossal giant Tung trees with mammoth buttress roots, wild gaur herds, Asian elephants, and Siamese crocodiles. Together with the bordering Bu Gia Map forests, it forms an invaluable ecological sanctuary.',
     },
     historicalSignificance: {
       vi: 'Không chỉ là di sản sinh học quốc tế, Cát Tiên còn lưu giữ di chỉ khảo cổ học Cát Tiên thuộc vương quốc cổ Phù Nam / Champa bí ẩn với những đền đài phế tích bằng gạch nung hàng nghìn năm tuổi.',
@@ -401,12 +356,12 @@ export const LANDMARKS: Landmark[] = [
     visitorInfo: {
       openingHours: 'Mở cửa 24/7 (Cần đăng ký tại Trung tâm du khách)',
       ticketPrice: {
-        vi: 'Vé vào cổng: 60.000 VNĐ | Vé Bàu Sấu: 140.000 VNĐ',
-        en: 'Park Entrance: 60,000 VND | Bau Sau Wetland: 140,000 VND',
+        vi: 'Vé vào cổng: 60.000 VNĐ | Thuê xe đạp khám phá: 30.000 VNĐ/giờ',
+        en: 'Park Entrance: 60,000 VND | Bike Rental: 30,000 VND/hour',
       },
       bestTimeToVisit: {
-        vi: 'Từ tháng 12 đến tháng 5 năm sau (Mùa khô ráo, đường mòn trekking thuận tiện và dễ gặp thú rừng)',
-        en: 'December to May (Dry season, ideal trails for trekking and high chances for wildlife encounters)',
+        vi: 'Từ tháng 12 đến tháng 5 năm sau (Mùa khô ráo, đường mòn đạp xe thuận tiện và dễ gặp bầy bò tót ra đồng cỏ)',
+        en: 'December to May (Dry season, ideal trails for cycling and highest chances to observe wild gaurs)',
       },
     },
     modelType: 'cat-tien',
@@ -415,8 +370,8 @@ export const LANDMARKS: Landmark[] = [
         id: 'cay-tung-co-thu',
         position: [-1, 2.5, -0.5],
         title: {
-          vi: 'Cây Tung 500 Tuổi',
-          en: '500-Year-Old Giant Tung Tree',
+          vi: 'Cây Tung Đại Thụ Rễ Bạnh Vè',
+          en: 'Giant Tung Tree Buttress Roots',
         },
         description: {
           vi: 'Kỳ quan thiên nhiên với bộ rễ bạnh vè khổng lồ cao hơn 4 mét, vươn dài hàng chục mét như những bức tường thành vững chãi.',
@@ -424,31 +379,19 @@ export const LANDMARKS: Landmark[] = [
         },
       },
       {
-        id: 'bau-sau',
+        id: 'dan-bo-tot',
         position: [1.5, 0.4, 1.2],
         title: {
-          vi: 'Vùng Đất Ngập Nước Bàu Sấu',
-          en: 'Bau Sau (Crocodile Lake) Wetland',
+          vi: 'Quần Thể Bò Tót Hoang Dã',
+          en: 'Wild Gaur Herds Sanctuary',
         },
         description: {
-          vi: 'Khu Ramsar thứ 1499 của thế giới, mái nhà của hàng trăm cá thể cá sấu xiêm thuần chủng và chim nước quý hiếm.',
-          en: 'World Ramsar wetland site #1499, natural sanctuary for wild Siamese crocodiles and rare waterfowl.',
-        },
-      },
-      {
-        id: 'ghenh-ben-cu',
-        position: [0, 0.6, -2],
-        title: {
-          vi: 'Ghềnh Thác Bến Cự',
-          en: 'Ben Cu River Rapids',
-        },
-        description: {
-          vi: 'Dòng nước sông Đồng Nai cuộn trào qua các tảng đá bazan đen bóng, tạo nên thanh âm hùng tráng giữa đại ngàn.',
-          en: 'Rushing rapids of Dong Nai river churning over polished volcanic basalt rocks deep in the primary forest.',
+          vi: 'Mái nhà bình yên của hàng trăm cá thể bò tót quý hiếm được bảo tồn nghiêm ngặt trong môi trường hoang dã tự nhiên.',
+          en: 'Safe natural habitat for hundreds of endangered wild gaurs thriving under strict conservation protection.',
         },
       },
     ],
-    panoUrl: 'https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2400&q=80',
+    panoUrl: '/images/cattien-ho-xanh.jpg',
   },
   {
     id: 'thac-giang-dien',
@@ -468,19 +411,20 @@ export const LANDMARKS: Landmark[] = [
     },
     established: 'Khai thác du lịch sinh thái từ năm 2006',
     coordinates: [10.9231, 107.0125],
-    heroImage: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1600&q=80',
+    heroImage: '/images/giang-dien-thac.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80'
+      '/images/giang-dien-thac.jpg',
+      '/images/giang-dien-cong.jpg',
+      '/images/cattien-suoi.jpg',
+      '/images/buulong-cau-treo.jpg',
     ],
     shortDesc: {
-      vi: 'Thác Giang Điền gắn liền với huyền thoại tình yêu son sắt của lứa đôi, mang vẻ đẹp hoang sơ kỳ thú của dòng thác ba nhánh đổ qua những thềm đá bazan ghập ghềnh.',
-      en: 'Giang Dien Waterfall is steeped in the folklore of eternal love, showcasing the untamed beauty of a three-stream cascade tumbling over tiered basalt shelves.',
+      vi: 'Thác Giang Điền nổi bật với cổng chào rực rỡ, dòng thác ba nhánh hùng vĩ đổ qua những thềm đá bazan ghập ghềnh và thảm cây xanh mát quanh năm.',
+      en: 'Giang Dien Waterfall is steeped in romantic folklore, showcasing the untamed beauty of cascading streams tumbling over tiered basalt shelves.',
     },
     fullDesc: {
-      vi: 'Được tạo hóa ban tặng từ sự hợp dòng của con sông Buông hiền hòa, Thác Giang Điền bao gồm 3 dòng thác kỳ vĩ: Thác Chàng, Thác Nàng và dòng thác chính Giang Điền. Theo truyền thuyết dân gian của đồng bào Mạ, nơi đây là minh chứng cho tình yêu thủy chung son sắt của đôi trai gái yêu nhau tha thiết nhưng gặp trắc trở, đã nguyện cùng hòa mình vào dòng nước để muôn đời bên nhau. Với bãi cỏ xanh ngút ngàn, những dải đá đen xếp tầng và bọt nước tung trắng xóa mát lạnh, đây là điểm dừng chân dã ngoại sinh thái lý tưởng.',
-      en: 'Gifted by nature where the gentle Buong River converges, Giang Dien encompasses three cascading tiers: Chang Fall (The Boy), Nang Fall (The Girl), and the central Giang Dien cataract. Local ethnic folklore tells of young star-crossed lovers who plunged into the streams to be united eternally. With rolling green lawns, stepping basalt terraces, and cooling mist sprays, it provides a revitalizing eco-tourism getaway.',
+      vi: 'Được tạo hóa ban tặng từ sự hợp dòng của con sông Buông hiền hòa, Khu du lịch sinh thái Thác Giang Điền bao gồm 3 dòng thác kỳ vĩ: Thác Chàng, Thác Nàng và dòng thác chính Giang Điền. Theo truyền thuyết dân gian của đồng bào Mạ và M’Nông, nơi đây là minh chứng cho tình yêu thủy chung son sắt của đôi trai gái nguyện cùng hòa mình vào dòng nước để muôn đời bên nhau. Với bãi cỏ xanh ngút ngàn, cổng chào lễ hội rực rỡ và bọt nước tung trắng xóa mát lạnh, đây là điểm dừng chân dã ngoại sinh thái số một Đồng Nai.',
+      en: 'Gifted by nature where the gentle Buong River converges, Giang Dien Eco-Tourism Resort encompasses three cascading tiers: Chang Fall (The Boy), Nang Fall (The Girl), and the central Giang Dien cataract. Steeped in folklore of ethnic lovers, with festive gateways, stepping basalt terraces, and cooling mist sprays, it provides a revitalizing eco-tourism getaway.',
     },
     historicalSignificance: {
       vi: 'Là danh thắng sinh thái gắn liền với kho tàng văn hóa dân gian truyền khẩu của các dân tộc bản địa Đông Nam Bộ, thể hiện sự hòa hợp mật thiết giữa con người và thiên nhiên.',
@@ -511,35 +455,23 @@ export const LANDMARKS: Landmark[] = [
           en: 'Chang & Nang Twin Streams',
         },
         description: {
-          vi: 'Hai nhánh thác song song chảy xiết qua các gộp đá, tượng trưng cho tình yêu vĩnh cửu gắn bó.',
+          vi: 'Hai nhánh thác song song chảy xiết qua các gộp đá bazan, tượng trưng cho tình yêu vĩnh cửu gắn bó.',
           en: 'Two parallel cascades flowing passionately over rocky terraces, symbolizing eternal love.',
         },
       },
       {
-        id: 'cau-treo-giang-dien',
+        id: 'cong-giang-dien',
         position: [-1.8, 1.8, 1.5],
         title: {
-          vi: 'Cầu Treo Hoàng Hôn',
-          en: 'Suspension Scenic Bridge',
+          vi: 'Cổng Chào Sinh Thái Giang Điền',
+          en: 'Giang Dien Eco Gateway',
         },
         description: {
-          vi: 'Cây cầu treo bắc ngang dòng sông, điểm ngắm toàn cảnh thác nước đổ và hoàng hôn buông xuống đẹp nhất.',
-          en: 'Suspension footbridge spanning the river canyon, providing the premier vantage point for cascading falls and sunset.',
-        },
-      },
-      {
-        id: 'bai-da-bazan',
-        position: [1.6, 0.4, 1.2],
-        title: {
-          vi: 'Thềm Đá Bazan Cổ',
-          en: 'Ancient Basalt Steps',
-        },
-        description: {
-          vi: 'Các phiến đá bazan đen bóng được dòng nước bào mòn hàng trăm năm tạo thành các bậc thềm tự nhiên độc đáo.',
-          en: 'Slick dark volcanic basalt boulders sculpted over centuries by relentless river currents into natural cascading steps.',
+          vi: 'Cổng tam giác mái rợp cờ hoa truyền thống rực rỡ đón chào du khách muôn phương.',
+          en: 'Festive wooden triangular gateway welcoming visitors from across Vietnam.',
         },
       },
     ],
-    panoUrl: 'https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=2400&q=80',
+    panoUrl: '/images/giang-dien-thac.jpg',
   },
 ];

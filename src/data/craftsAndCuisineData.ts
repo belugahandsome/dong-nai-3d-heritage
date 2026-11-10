@@ -2,6 +2,77 @@ import { CraftVillage, CuisineItem } from '../types';
 
 export const CRAFTS_DATA: CraftVillage[] = [
   {
+    id: 'det-tho-cam-mnong',
+    name: {
+      vi: 'Nghề Dệt Thổ Cẩm Người M’Nông (Di Sản Quốc Gia)',
+      en: "M'Nong Traditional Brocade Weaving (National Intangible Heritage)",
+    },
+    subtitle: {
+      vi: 'Di sản văn hóa phi vật thể quốc gia lưu giữ linh hồn và hoa văn đại ngàn',
+      en: 'National Intangible Cultural Heritage preserving the sacred motifs and soul of the primeval highlands',
+    },
+    location: {
+      vi: 'Đồng Nai & Vùng phụ cận đại ngàn Cát Tiên - Bù Gia Mập',
+      en: 'Dong Nai & Neighboring Highland Woodlands of Cat Tien - Bu Gia Map',
+    },
+    image: '/images/cattien-suong-mai.jpg',
+    gallery: [
+      '/images/cattien-suong-mai.jpg',
+      '/images/cattien-cay-tung.jpg',
+      '/images/cattien-dap-xe.jpg',
+    ],
+    age: 'Di sản văn hóa phi vật thể quốc gia',
+    description: {
+      vi: 'Nghề dệt thổ cẩm truyền thống của người M’Nông là Di sản văn hóa phi vật thể quốc gia được Bộ Văn hóa, Thể thao và Du lịch chính thức công nhận. Trải qua bao thế hệ cư trú ven rừng thiêng Đồng Nai và Tây Nguyên, người phụ nữ M’Nông sử dụng khung dệt lưng thủ công để tạo nên những tấm vải dệt kỳ công. Từng sợi chỉ bông được nhuộm hoàn toàn bằng nguyên liệu tự nhiên từ vỏ cây rừng, củ nghệ, lá chàm và đất son. Hoa văn thổ cẩm M’Nông là một cuốn biên niên sử sinh động khắc họa thần rừng, chim muông, dòng suối và những nương rẫy trù phú.',
+      en: "The traditional brocade weaving craft of the M'Nong people has been formally designated as a National Intangible Cultural Heritage by Vietnam's Ministry of Culture, Sports and Tourism. Across generations residing along Dong Nai's ancient forests, M'Nong women employ backstrap handlooms to produce intricate textiles. Organic cotton threads are tinted purely with botanical forest dyes extracted from bark, turmeric, and indigo. M'Nong woven motifs serve as a living chronicle echoing forest spirits, wildlife, sacred streams, and fertile terraced harvests.",
+    },
+    processSteps: [
+      {
+        step: 1,
+        title: { vi: 'Khai Thác Thảo Mộc Nhuộm Màu', en: 'Botanical Color Extraction' },
+        desc: {
+          vi: 'Thu hái vỏ cây tràm, lá chàm rừng, củ nghệ và bùn suối để nấu nước nhuộm màu thủ công không hóa chất.',
+          en: 'Gathering indigenous forest bark, wild indigo, turmeric, and mineral clay for natural, chemical-free dyeing.',
+        },
+      },
+      {
+        step: 2,
+        title: { vi: 'Kéo Sợi & Lên Khung Dệt Lưng', en: 'Spinning & Backstrap Loom Mounting' },
+        desc: {
+          vi: 'Bông rừng sau khi bật tơi được kéo thành sợi đều tăm tắp, mắc vào khung dệt lưng tựa người để căng chỉ.',
+          en: 'Carded organic cotton is spun into uniform yarns, then mounted onto traditional body-tensioned backstrap looms.',
+        },
+      },
+      {
+        step: 3,
+        title: { vi: 'Tạo Tác Hoa Văn Thần Rừng', en: 'Weaving Sacred Forest Motifs' },
+        desc: {
+          vi: 'Dùng que tre luồn sợi tạo hoa văn hình thoi, mắt chim, sừng trâu và ngọn lửa biểu trưng cho vũ trụ M’Nông.',
+          en: 'Interlacing bamboo picks to create diamond geometric patterns, bird eyes, water currents, and sacred celestial flames.',
+        },
+      },
+      {
+        step: 4,
+        title: { vi: 'Hoàn Thiện Trang Phục Lễ Hội', en: 'Ceremonial Garment Finishing' },
+        desc: {
+          vi: 'Khâu ghép thành áo váy, khố, túi gùi và khăn choàng dùng trong các nghi lễ cúng thần rừng và tết lúa mới.',
+          en: 'Stitching brocade panels into ceremonial tunics, loincloths, and shawls for harvest thanksgiving rituals.',
+        },
+      },
+    ],
+    culturalValue: {
+      vi: 'Được công nhận là Di sản văn hóa phi vật thể quốc gia, nghề dệt thổ cẩm M’Nông là bằng chứng sống động về kho tàng tri thức bản địa, tính thẩm mỹ tinh tế và bản sắc độc đáo của cộng đồng các dân tộc thiểu số tại Đồng Nai.',
+      en: "Classified as a National Intangible Cultural Heritage, M'Nong brocade weaving stands as radiant proof of indigenous ecological wisdom, refined aesthetics, and enduring ethnic identity in Dong Nai.",
+    },
+    artisanQuote: {
+      text: {
+        vi: 'Khung dệt là nhịp đập trái tim của người M’Nông. Tiếng lách cách thoi đưa theo ta từ thuở ấu thơ cho đến khi về với đất mẹ đại ngàn.',
+        en: 'The loom is the heartbeat of our people. The rhythmic click of the shuttle accompanies us from childhood to the eternal embrace of the forest.',
+      },
+      author: 'Nghệ nhân Thổ cẩm M’Nông - Vùng đệm Cát Tiên Đồng Nai',
+    },
+  },
+  {
     id: 'gom-bien-hoa',
     name: {
       vi: 'Gốm Mỹ Nghệ Biên Hòa',
@@ -12,14 +83,14 @@ export const CRAFTS_DATA: CraftVillage[] = [
       en: 'The legendary "Vert de Bien Hoa" copper jade glaze renowned across continents for over three centuries',
     },
     location: {
-      vi: 'Dọc hữu ngạn sông Đồng Nai (Phường Bửu Long, Tân Vạn, Hóa An, TP. Biên Hòa)',
-      en: 'Along the banks of Dong Nai River (Buu Long, Tan Van, Hoa An Wards, Bien Hoa City)',
+      vi: 'Phường Bửu Long, Tân Vạn, Hóa An (dọc hữu ngạn sông Đồng Nai)',
+      en: 'Buu Long, Tan Van, Hoa An Wards (along the banks of Dong Nai River)',
     },
-    image: 'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/chua-quang-minh-thap.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=1200&q=80',
+      '/images/chua-quang-minh-thap.jpg',
+      '/images/chua-quang-minh-tamquan.jpg',
+      '/images/buulong-cau-treo.jpg',
     ],
     age: 'Hơn 300 năm hình thành và phát triển',
     description: {
@@ -64,13 +135,6 @@ export const CRAFTS_DATA: CraftVillage[] = [
       vi: 'Từng đoạt huy chương vàng danh giá tại các kỳ triển lãm thế giới ở Paris (1925, 1932), sản phẩm gốm Biên Hòa đã vượt ra khỏi biên giới quốc gia, trở thành cổ vật quý giá trong nhiều viện bảo tàng trên thế giới.',
       en: 'Awarded gold medals at the prestigious Paris International Exhibitions (1925, 1932), Bien Hoa pottery transcended borders to become prized artifacts featured in premier museums worldwide.',
     },
-    artisanQuote: {
-      text: {
-        vi: 'Men xanh đồng của gốm Biên Hòa mang cả hồn đất phù sa và giọt mồ hôi của người thợ qua bao đời gắn bó với dòng sông.',
-        en: 'The copper-green glaze of Bien Hoa carries the soul of river alluvium and generations of artisan dedication along the Dong Nai River.',
-      },
-      author: 'Nghệ nhân Nhân dân Hoàng Ngọc Trảng',
-    },
   },
   {
     id: 'lang-buoi-tan-trieu',
@@ -86,40 +150,32 @@ export const CRAFTS_DATA: CraftVillage[] = [
       vi: 'Xã Tân Bình, Huyện Vĩnh Cửu, Tỉnh Đồng Nai (Cù lao Tân Triều)',
       en: 'Tan Binh Commune, Vinh Cuu District, Dong Nai Province (Tan Trieu Islet)',
     },
-    image: 'https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/buulong-cau-treo.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1557800636-894a64c1696f?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1618897996318-5a901fa6ca71?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1519996529931-28324d5a630e?auto=format&fit=crop&w=1200&q=80',
+      '/images/buulong-cau-treo.jpg',
+      '/images/buulong-hoang-hon.jpg',
+      '/images/cattien-suoi.jpg',
     ],
     age: 'Hình thành từ năm 1869 (hơn 150 năm lịch sử)',
     description: {
-      vi: 'Cù lao Tân Triều được dòng sông Đồng Nai bao bọc như một ốc đảo trù phú. Cây bưởi được du nhập về làng từ năm 1869 bởi một linh mục người Pháp trồng tại khuôn viên nhà thờ Tân Triều. Nhờ nguồn đất phù sa màu mỡ và khí hậu ôn hòa, bưởi Tân Triều phát triển rực rỡ với các giống trứ danh: bưởi đường lá cam mọng nước, bưởi ổi giòn ngọt, bưởi thanh trà thanh mát. Không chỉ bán quả tươi, người dân nơi đây còn sáng tạo nên nghề ủ rượu bưởi thủ công đựng trong bình gốm độc đáo.',
-      en: 'Surrounded by the serpentine Dong Nai River, Tan Trieu Islet is an agrarian paradise. Pomelo cultivation was initiated in 1869 when trees were planted at Tan Trieu church grounds. Nurtured by mineral-rich river silt, Tan Trieu gave rise to treasured heirloom cultivars: sweet Orange-leaf pomelo, crisp Guava pomelo, and fragrant Green-flesh varieties. Beyond fresh fruit, local families ferment artisanal pomelo wine aged gracefully in ceramic urns.',
+      vi: 'Cù lao Tân Triều được dòng sông Đồng Nai bao bọc như một ốc đảo trù phú. Cây bưởi được du nhập về làng từ năm 1869 và phát triển rực rỡ nhờ nguồn đất phù sa màu mỡ. Bưởi Tân Triều trứ danh với bưởi đường lá cam mọng nước, bưởi ổi giòn ngọt, bưởi da xanh thanh mát. Người dân nơi đây còn sáng tạo nên nghề ủ rượu bưởi thủ công đựng trong bình gốm Biên Hòa độc đáo.',
+      en: 'Surrounded by the serpentine Dong Nai River, Tan Trieu Islet is an agrarian paradise. Pomelo cultivation was initiated in 1869. Nurtured by mineral-rich river silt, Tan Trieu gave rise to treasured heirloom cultivars: sweet Orange-leaf pomelo, crisp Guava pomelo, and fragrant Green-flesh varieties, paired with artisanal ceramic-aged pomelo wine.',
     },
     processSteps: [
       {
         step: 1,
-        title: { vi: 'Chăm Sóc Hữu Cơ', en: 'Alluvial Organic Nurturing' },
+        title: { vi: 'Chăm Sóc Hữu Cơ Phù Sa', en: 'Alluvial Organic Nurturing' },
         desc: {
-          vi: 'Bón bùn phù sa sông Đồng Nai hàng năm và nuôi kiến vàng để diệt trừ sâu bệnh tự nhiên.',
-          en: 'Replenishing orchards with mineral river dredge mud annually and employing weaver ants for eco-friendly pest control.',
+          vi: 'Bồi đắp bùn phù sa sông Đồng Nai hàng năm và nuôi kiến vàng để diệt trừ sâu bệnh tự nhiên.',
+          en: 'Replenishing orchards with river dredge mud annually and employing weaver ants for eco-friendly pest control.',
         },
       },
       {
         step: 2,
-        title: { vi: 'Thu Hoạch Đúng Độ Chín', en: 'Selective Harvesting' },
-        desc: {
-          vi: 'Hái quả bằng tay lúc sương sớm tan, đảm bảo múi bưởi căng mọng và vỏ ngoài tinh dầu thơm nồng.',
-          en: 'Hand-picking at optimal ripeness as morning mist clears, ensuring plump translucent vesicles and aromatic peel oils.',
-        },
-      },
-      {
-        step: 3,
-        title: { vi: 'Nghề Ủ Rượu Bưởi', en: 'Artisanal Fermentation' },
+        title: { vi: 'Nghề Ủ Rượu Bưởi Vò Gốm', en: 'Ceramic Urn Wine Aging' },
         desc: {
           vi: 'Tách lấy múi bưởi chín, phối men tự nhiên và ủ trong vò gốm Biên Hòa suốt 6 đến 12 tháng.',
-          en: 'Selecting prime pomelo segments, blending with natural yeast, and aging in Bien Hoa ceramic urns for 6 to 12 months.',
+          en: 'Selecting prime pomelo segments, blending with natural yeast, and aging in Bien Hoa ceramic urns.',
         },
       },
     ],
@@ -128,86 +184,71 @@ export const CRAFTS_DATA: CraftVillage[] = [
       en: 'Granted National Protected Geographical Indication, Tan Trieu Pomelo stands as a hallmark of Southern Vietnamese agrotourism and cultural gastronomy.',
     },
   },
-  {
-    id: 'det-tho-cam-cho-ro',
-    name: {
-      vi: 'Dệt Thổ Cẩm & Đan Lát Chơro – Mạ',
-      en: 'Choro & Ma Indigenous Weaving Crafts',
-    },
-    subtitle: {
-      vi: 'Sợi chỉ hoa văn cất giữ truyền thuyết đại ngàn Chiến khu Đ',
-      en: 'Woven geometric tapestries preserving the ancient myths of War Zone D jungle',
-    },
-    location: {
-      vi: 'Xã Phú Lý, Huyện Vĩnh Cửu & Huyện Định Quán, Tỉnh Đồng Nai',
-      en: 'Phu Ly Commune, Vinh Cuu District & Dinh Quan District, Dong Nai',
-    },
-    image: 'https://images.unsplash.com/photo-1606744888344-498238f01037?auto=format&fit=crop&w=1200&q=80',
-    gallery: [
-      'https://images.unsplash.com/photo-1606744888344-498238f01037?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80',
-    ],
-    age: 'Di sản phi vật thể truyền đời hàng trăm năm',
-    description: {
-      vi: 'Người Chơro và người Mạ là những cư dân bản địa lâu đời sinh sống tại vùng rừng thiêng Đồng Nai. Phụ nữ dân tộc dệt thổ cẩm bằng khung dệt tay truyền thống, sử dụng sợi bông rừng nhuộm màu tự nhiên từ vỏ cây, rễ củ và lá rừng. Mỗi tấm thổ cẩm và chiếc gùi đan bằng mây tre là một tác phẩm nghệ thuật kể lại câu chuyện về thần rừng, tiếng chim chiing-choong và lễ hội Sayangva tạ ơn lúa mới.',
-      en: 'The indigenous Choro and Ma peoples are the ancient native inhabitants of Dong Nai’s legendary woodlands. Women weave textiles on backstrap handlooms, dying organic cotton threads with natural forest pigments extracted from bark, roots, and indigo leaves. Each blanket, skirt, and woven rattan back-basket echoes legends of the forest spirit and joyful Sayangva harvest rituals.',
-    },
-    processSteps: [
-      {
-        step: 1,
-        title: { vi: 'Nhuộm Màu Tự Nhiên', en: 'Botanical Dyeing' },
-        desc: {
-          vi: 'Nấu nước lá chàm cho màu xanh thẫm, vỏ cây bàng cho màu đen, củ nghệ cho sắc vàng óng.',
-          en: 'Extracting deep blues from indigo leaves, rich blacks from forest bark, and vibrant yellows from turmeric.',
-        },
-      },
-      {
-        step: 2,
-        title: { vi: 'Dệt Khung Lưng Truyền Thống', en: 'Backstrap Weaving' },
-        desc: {
-          vi: 'Luồn từng thoi chỉ tạo hoa văn hình thoi, răng cưa, chim muông và dòng suối biểu trưng cho thiên nhiên.',
-          en: 'Interlacing weft threads across backstrap looms to construct geometric diamonds, birds, and rushing water motifs.',
-        },
-      },
-    ],
-    culturalValue: {
-      vi: 'Bảo tồn bản sắc văn hóa phi vật thể của các cộng đồng thiểu số miền Đông Nam Bộ, được tôn vinh trong các không gian bảo tàng văn hóa dân tộc Đồng Nai.',
-      en: 'Preserves the intangible heritage of Southeast Vietnam’s indigenous ethnic groups, prominently celebrated in provincial ethnographic exhibits.',
-    },
-  },
 ];
 
 export const CUISINE_DATA: CuisineItem[] = [
   {
-    id: 'goi-buoi-tan-trieu',
+    id: 'buoi-tan-trieu-va-ruou-buoi',
     name: {
-      vi: 'Gỏi Bưởi Tân Triều',
-      en: 'Tan Trieu Pomelo & River Prawn Salad',
+      vi: 'Bưởi Tân Triều (Gỏi Bưởi & Rượu Bưởi)',
+      en: 'Tan Trieu Pomelo, Salad & Artisanal Wine',
     },
     tagline: {
-      vi: 'Món khai vị trứ danh kết tinh vị ngọt lành phù sa sông Đồng Nai',
-      en: 'The iconic appetizer capturing the crisp citrus freshness of Dong Nai River silt',
+      vi: 'Món quà ngọt thanh kết tinh từ dòng phù sa màu mỡ sông Đồng Nai',
+      en: 'The iconic citrus delicacy capturing the crisp natural sweetness of Dong Nai river silt',
     },
     region: {
       vi: 'Cù lao Tân Triều, Huyện Vĩnh Cửu',
       en: 'Tan Trieu Islet, Vinh Cuu District',
     },
-    image: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/buulong-cau-treo.jpg',
     ingredients: {
-      vi: ['Tép bưởi đường lá cam Tân Triều', 'Tôm càng sông Đồng Nai', 'Thịt ba rọi luộc thái mỏng', 'Rau răm, mè rang, đậu phộng', 'Nước mắm chua ngọt pha tỏi ớt', 'Bánh tráng mè nướng giòn rụm'],
-      en: ['Tan Trieu orange-leaf pomelo vesicles', 'Fresh Dong Nai river prawns', 'Thinly sliced braised pork belly', 'Vietnamese coriander, toasted peanuts', 'Garlic-chili lime dressing', 'Toasted sesame rice crackers'],
+      vi: ['Tép bưởi đường lá cam Tân Triều mọng nước', 'Tôm càng sông Đồng Nai tươi sống', 'Thịt ba rọi luộc thái mỏng', 'Rượu bưởi lên men tự nhiên vò gốm', 'Rau răm, đậu phộng rang, bánh tráng nướng'],
+      en: ['Tan Trieu orange-leaf pomelo vesicles', 'Fresh Dong Nai river prawns', 'Braised pork belly slices', 'Natural pomelo wine fermented in ceramic gourds', 'Vietnamese coriander, roasted peanuts, sesame rice crackers'],
     },
     description: {
-      vi: 'Gỏi bưởi Tân Triều chinh phục thực khách bởi sự cân bằng hương vị hoàn hảo: múi bưởi mọng nước giòn sần sật có vị ngọt dịu thanh tao, hòa quyện với vị ngọt đậm đà của tôm sông Đồng Nai luộc đỏ au, chút béo ngậy của thịt heo, vị thơm nồng của rau răm và bùi bùi của đậu phộng rang. Ăn kèm miếng bánh tráng mè nướng giòn tan mang lại trải nghiệm ẩm thực khó quên.',
-      en: 'Tan Trieu Pomelo Salad enchants gourmets with its pristine harmony of flavors: plump, jewel-like pomelo vesicles that burst with refreshing sweetness, paired with succulent fresh river prawns, tender pork belly, aromatic herbs, and roasted peanuts. Scooped upon golden crispy sesame crackers, it delivers an unforgettable taste of Southern riverine cuisine.',
+      vi: 'Bưởi Tân Triều là danh phẩm nông nghiệp số 1 của Đồng Nai. Trái bưởi đường lá cam múi mọng nước, tép vàng ươm, vị ngọt thanh mát không hạt. Nổi tiếng nhất là món Gỏi bưởi tôm sông - sự hòa quyện hoàn hảo giữa tép bưởi giòn sần sật, tôm sông ngọt đậm đà, đậu phộng bùi bùi và bánh tráng mè nướng giòn rụm. Đi kèm là Rượu bưởi Tân Triều ủ men truyền thống trong bình gốm Biên Hòa hương thơm nồng nàn dịu êm.',
+      en: 'Tan Trieu Pomelo is Dong Nai’s premier agricultural jewel. The heirloom orange-leaf variety yields translucent, sweet-tart vesicles that burst with refreshing coolness. Its crowning dish is Pomelo River Prawn Salad—harmonizing crunchy citrus pulp with succulent prawns, aromatic herbs, and roasted peanuts scooped on sesame crackers, paired with velvety pomelo wine.',
     },
     tasteProfile: {
-      vi: 'Chua thanh tao, ngọt dịu tự nhiên, giòn mát, thơm lừng hương vỏ bưởi và vừng rang.',
-      en: 'Crisp and refreshing with delicate sweet-tart notes, fragrant citrus essence, and nutty crunch.',
+      vi: 'Chua thanh tao, ngọt lịm tự nhiên, mọng nước, thơm lừng hương hoa bưởi thoang thoảng.',
+      en: 'Crisp, delicately sweet-tart, bursting with revitalizing citrus fragrance.',
     },
     culturalSignificance: {
-      vi: 'Món ăn đại diện cho nghệ thuật biến nông sản miệt vườn thành kiệt tác ẩm thực cung đình Nam Bộ, thường xuất hiện trong các yến tiệc tiếp đón quan khách quốc tế.',
-      en: 'A culinary testament transforming orchard harvests into high gastronomic art, featured prominently in official state banquets.',
+      vi: 'Đạt chỉ dẫn địa lý quốc gia, là biểu tượng ẩm thực hiếu khách của người dân miệt vườn Đồng Nai.',
+      en: 'Protected National Geographical Indication, symbolizing the hospitable riverine culture of Dong Nai.',
+    },
+  },
+  {
+    id: 'hat-dieu-dong-nai',
+    name: {
+      vi: 'Hạt Điều Đồng Nai (Hạt Điều Rang Muối)',
+      en: 'Dong Nai Cashew Nuts (Roasted Salted Cashews)',
+    },
+    tagline: {
+      vi: 'Nông sản vàng của thủ phủ cây công nghiệp đất đỏ bazan miền Đông',
+      en: 'The golden harvest from the cashew capital of the southeastern basalt plateau',
+    },
+    region: {
+      vi: 'Định Quán, Xuân Lộc, Thống Nhất & Trảng Bom',
+      en: 'Dinh Quan, Xuan Loc, Thong Nhat & Trang Bom Districts',
+    },
+    image: '/images/giang-dien-cong.jpg',
+    ingredients: {
+      vi: ['Hạt điều loại 1 thu hoạch từ vùng đất đỏ bazan Đồng Nai', 'Muối tinh sấy trắng', 'Phương pháp rang củi truyền thống giữ trọn màng lụa'],
+      en: ['Grade-A premium cashews nurtured on Dong Nai basalt soils', 'Pure sea salt', 'Wood-fired traditional roasting preserving natural skins'],
+    },
+    description: {
+      vi: 'Đồng Nai là một trong những cái nôi và thủ phủ trồng điều lớn nhất Việt Nam. Được nuôi dưỡng trên tầng đất đỏ bazan màu mỡ và nắng ấm chan hòa, hạt điều Đồng Nai có kích thước hạt tròn đều, mẩy chắc, vị bùi béo ngậy đậm đà vượt trội. Món Hạt điều rang muối còn nguyên vỏ lụa rang củi thủ công là món quà đặc sản nức tiếng cả nước và xuất khẩu đến hơn 30 quốc gia trên thế giới, đạt chuẩn OCOP chất lượng cao.',
+      en: 'Dong Nai stands as a foundational capital of cashew cultivation in Vietnam. Thriving on fertile volcanic red soils and abundant tropical sunshine, Dong Nai cashews boast plump kernels, unmatched natural crunch, and an intensely creamy nutty richness. Roasted with artisanal wood fires over sea salt, it represents a celebrated specialty exported globally to over 30 countries.',
+    },
+    tasteProfile: {
+      vi: 'Giòn rụm tan trong miệng, bùi béo ngậy tự nhiên, hậu vị mằn mặn ngọt sâu lắng.',
+      en: 'Irresistibly crispy, luxuriously buttery and nutty with a gentle savory-sweet finish.',
+    },
+    culturalSignificance: {
+      vi: 'Minh chứng cho sức sống bền bỉ của người nông dân Đồng Nai biến vùng đất đỏ gồ ghề thành những đồn điền điều trù phú mang tầm quốc tế.',
+      en: 'Reflects the industrious pioneer spirit of Dong Nai farmers transforming basalt highlands into internationally acclaimed agricultural treasures.',
     },
   },
   {
@@ -217,14 +258,14 @@ export const CUISINE_DATA: CuisineItem[] = [
       en: 'Bien Hoa Fried Puffed Sticky Rice',
     },
     tagline: {
-      vi: 'Tuyệt kỹ tạo hình xôi tròn phồng vàng ruộm nức tiếng ba miền',
-      en: 'The culinary spectacle of golden puffed glutinous spheres perfected in Bien Hoa',
+      vi: 'Tuyệt kỹ tạo hình xôi tròn phồng vàng ruộm nức tiếng ba miền (Kỷ lục Châu Á)',
+      en: 'The culinary spectacle of golden puffed glutinous spheres perfected in Bien Hoa (Asian Record)',
     },
     region: {
       vi: 'Thành phố Biên Hòa',
       en: 'Bien Hoa City',
     },
-    image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/buulong-thuyen-thien-nga.jpg',
     ingredients: {
       vi: ['Gạo nếp nương dẻo thơm', 'Đậu xanh cà vỏ tán mịn', 'Đường cát trắng, dầu ăn chất lượng cao', 'Ăn kèm gà nướng đất sét hoặc bồ câu quay'],
       en: ['Fragrant sticky rice', 'Steamed mashed mung beans', 'Pure cane sugar, high-grade oil', 'Served with clay-baked organic chicken or roasted squab'],
@@ -240,102 +281,6 @@ export const CUISINE_DATA: CuisineItem[] = [
     culturalSignificance: {
       vi: 'Món ăn từng được vinh danh trong Kỷ lục Ẩm thực Việt Nam và Kỷ lục Châu Á, là niềm tự hào biểu tượng của nghệ thuật ẩm thực Đồng Nai.',
       en: 'Inducted into Vietnam and Asian Culinary Records, it represents an iconic symbol of Dong Nai gastronomic mastery.',
-    },
-  },
-  {
-    id: 'goi-ca-bien-hoa',
-    name: {
-      vi: 'Gỏi Cá Biên Hòa (Cù Lao Phố)',
-      en: 'Bien Hoa River Fish Salad (Pho Islet)',
-    },
-    tagline: {
-      vi: 'Món ngon sông nước với bản hòa ca của hơn 20 loại rau rừng quý',
-      en: 'A riverine delicacy celebrated with a symphony of over 20 wild forest herbs',
-    },
-    region: {
-      vi: 'Làng gỏi cá Tân Mai & Cù lao Phố, TP. Biên Hòa',
-      en: 'Tan Mai & Pho Islet fish village, Bien Hoa City',
-    },
-    image: 'https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?auto=format&fit=crop&w=1200&q=80',
-    ingredients: {
-      vi: ['Cá chép hoặc cá trắm cỏ sông Đồng Nai tươi sống', 'Thính gạo rang thơm lừng', 'Nước sốt chấm gan cá nấu ấm nóng bí truyền', 'Hơn 20 loại rau: đinh lăng, lá cóc, lá sung, ngải cứu, mơ lông, vọng cách...'],
-      en: ['Live Dong Nai river carp or grass carp fillets', 'Fragrant roasted golden rice powder (thinh)', 'Simmered warm spiced fish liver dipping sauce', 'Over 20 wild medicinal herbs: polyscias, wild fig, mugwort, sour starfruit'],
-    },
-    description: {
-      vi: 'Nằm bên bờ sông Đồng Nai lộng gió, làng gỏi cá Biên Hòa có tuổi đời gần trăm năm. Cá tươi vừa đánh bắt được lạng phi lê thật mỏng, thấm khô rồi trộn đều với thính gạo vàng óng thơm phức. Điểm linh hồn của món ăn nằm ở nồi nước sốt chấm sền sệt nấu từ gan cá, trứng cá, sả, ớt và riềng thơm nức mũi. Thực khách cuốn cá cùng cả một "rừng thảo mộc" tươi non rồi chấm ngập sốt nóng.',
-      en: 'Nestled along the sweeping banks of Dong Nai River, Bien Hoa’s fish salad village spans nearly a century. Freshly harvested river fish are carved into gossamer slices, patted dry, and tossed in fragrant roasted rice powder. The soul is the warm dipping broth simmered from fish liver, roe, galangal, lemongrass, and chili. Diners wrap the fish inside a rich bouquet of wild herbs and dip into the simmering sauce.',
-    },
-    tasteProfile: {
-      vi: 'Thịt cá ngọt tươi không tanh, bùi bùi thính gạo, sốt chấm cay béo đậm đà kết hợp đủ vị chát cay nồng của rau rừng.',
-      en: 'Pristinely sweet fish with zero gaminess, nutty roasted rice aroma, creamy spicy dipping sauce, and vibrant herbal bitterness.',
-    },
-    culturalSignificance: {
-      vi: 'Được Tổ chức Kỷ lục Việt Nam xếp hạng vào Top 100 món ăn đặc sản Việt Nam, thể hiện lối sống chan hòa với thiên nhiên của người dân ven sông Đồng Nai.',
-      en: 'Ranked in Vietnam’s Top 100 Specialty Dishes, showcasing the sustainable riverine lifestyle of local waterways.',
-    },
-  },
-  {
-    id: 'sau-rieng-long-khanh',
-    name: {
-      vi: 'Sầu Riêng & Chôm Chôm Long Khánh',
-      en: 'Long Khanh Durian & Rambutan Haven',
-    },
-    tagline: {
-      vi: 'Hương vị ngút ngàn từ thủ phủ trái cây đất đỏ bazan miền Đông',
-      en: 'Exquisite volcanic richness from the fruit kingdom of red basalt soils',
-    },
-    region: {
-      vi: 'Thành phố Long Khánh & Huyện Xuân Lộc',
-      en: 'Long Khanh City & Xuan Loc District',
-    },
-    image: 'https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=1200&q=80',
-    ingredients: {
-      vi: ['Sầu riêng Ri6 & Chín Hóa chín cây tự nhiên', 'Chôm chôm nhãn giòn ngọt tróc hạt', 'Măng cụt ruột trắng như hoa sữa'],
-      en: ['Tree-ripened Ri6 & Chin Hoa heirloom durian', 'Crisp sweet Java & Logan-flesh rambutan', 'Milky white sweet-tangy mangosteens'],
-    },
-    description: {
-      vi: 'Long Khánh được thiên nhiên ưu đãi tầng đất đỏ bazan sâu màu mỡ hình thành từ núi lửa cổ xưa, giúp cây trái tại đây có độ ngọt đậm và mùi thơm nồng nàn khác biệt. Sầu riêng Long Khánh cơm vàng hạt lép, béo ngậy như kem bơ hạt dẻ, kết hợp cùng những chùm chôm chôm nhãn đỏ rực giòn sần sật tạo nên mùa lễ hội trái cây thu hút hàng trăm nghìn lượt du khách mỗi độ hè về.',
-      en: 'Long Khanh is gifted with deep volcanic red basalt earth, giving its fruits an incomparable sweetness and intoxicating aroma. Long Khanh durians feature golden flesh, tiny seeds, and an intensely buttery, custard-like texture. Paired with succulent clusters of sweet rambutan, they anchor Dong Nai’s lively annual fruit festivals.',
-    },
-    tasteProfile: {
-      vi: 'Béo ngậy như bơ sữa, ngọt lịm tan chảy trên đầu lưỡi, ngào ngạt hương thơm nhiệt đới.',
-      en: 'Decadently creamy, intensely buttery, melting luxuriously with enchanting tropical perfume.',
-    },
-    culturalSignificance: {
-      vi: 'Là trái cây chỉ dẫn địa lý tiêu biểu, biểu trưng cho sự trù phú và hào phóng của thiên nhiên dành tặng cho mảnh đất và con người Đồng Nai.',
-      en: 'A premier geographical indication product exemplifying the fertile abundance and generous hospitality of Dong Nai.',
-    },
-  },
-  {
-    id: 'lau-kho-qua-rung-cat-tien',
-    name: {
-      vi: 'Lẩu Lá Khổ Qua Rừng Cát Tiên',
-      en: 'Cat Tien Wild Bitter Melon Leaf Hotpot',
-    },
-    tagline: {
-      vi: 'Món quà thanh nhiệt bổ dưỡng từ thảm thực vật đại ngàn',
-      en: 'A therapeutic medicinal delicacy bestowed by the deep biosphere forest',
-    },
-    region: {
-      vi: 'Huyện Tân Phú & Vườn Quốc gia Cát Tiên',
-      en: 'Tan Phu District & Cat Tien Biosphere',
-    },
-    image: 'https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=80',
-    ingredients: {
-      vi: ['Đọt và lá khổ qua rừng tươi hái trong ngày', 'Cá lóc đồng hoặc cá thát lát quết dai', 'Nước dùng hầm từ xương cá sông ngọt thanh', 'Ớt hiểm rừng, tiêu sọ cay ấm'],
-      en: ['Freshly foraged wild bitter melon tender leaves', 'Freshwater snakehead fish or bouncy featherback fish paste', 'Slow-simmered river fish bone broth', 'Forest wild chilies, cracked white pepper'],
-    },
-    description: {
-      vi: 'Khổ qua rừng Cát Tiên mọc hoang dã dưới tán rừng nhiệt đới, lá nhỏ và vị đắng đậm đà hơn khổ qua thường nhưng để lại hậu ngọt sâu thẳm trong cuống họng. Nồi lẩu sôi sùng sục trên bếp lửa, thả những đọt lá xanh mướt cùng từng viên cá thát lát dai giòn vào nước dùng ngọt lịm từ cá sông. Đây không chỉ là món ăn ngon mà còn là bài thuốc quý giải nhiệt, thanh lọc cơ thể sau ngày dài trekking xuyên rừng.',
-      en: 'Wild bitter melon thrives under Cat Tien’s jungle canopy. Its delicate young leaves offer a spirited herbal bitterness that quickly transforms into an exquisite lingering sweet aftertaste. Plunged briefly into a bubbling broth enriched with wild fish quenelles, it serves as both culinary celebration and restorative remedy after trekking through the wilderness.',
-    },
-    tasteProfile: {
-      vi: 'Đắng dịu đầu lưỡi, hậu vị ngọt thanh mát kéo dài, thịt cá dai ngọt đậm đà.',
-      en: 'Invigorating initial herbal bitterness yielding to a sublime cooling sweet finish with savory broth.',
-    },
-    culturalSignificance: {
-      vi: 'Minh chứng cho tri thức ẩm thực dân gian trong việc sử dụng thảo mộc rừng tự nhiên làm thuốc bổ và món ngon của đồng bào bản địa.',
-      en: 'Highlights the indigenous ecological wisdom of transforming wild forest botanicals into healing gastronomy.',
     },
   },
 ];
