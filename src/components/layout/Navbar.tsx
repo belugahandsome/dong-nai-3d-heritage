@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
-import { Volume2, VolumeX, Menu, X, Compass, Globe, Sparkles } from 'lucide-react';
-import { ambientSound } from '../../utils/audioGenerator';
+import { Menu, X, Compass, Globe, Sparkles } from 'lucide-react';
 
 interface NavbarProps {
   onOpenIntro: () => void;
@@ -10,7 +9,6 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ onOpenIntro }) => {
   const { language, toggleLanguage, t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
-  const [isAudioActive, setIsAudioActive] = useState<boolean>(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
 
   useEffect(() => {
@@ -20,11 +18,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenIntro }) => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  const toggleSound = () => {
-    const playing = ambientSound.toggle();
-    setIsAudioActive(playing);
-  };
 
   const navLinks = [
     { href: '#heritage', label: { vi: 'Di Tích & Danh Thắng', en: 'Heritage & Landmarks' } },
@@ -79,20 +72,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenIntro }) => {
 
         {/* Controls & Action Buttons */}
         <div className="flex items-center gap-3">
-          {/* Sound Ambiance Toggle */}
-          <button
-            onClick={toggleSound}
-            aria-label="Toggle Sound"
-            className={`p-2 rounded-full border transition-all duration-300 backdrop-blur-md ${
-              isAudioActive
-                ? 'bg-heritage-gold text-heritage-emerald-dark border-white shadow-glow-gold'
-                : 'bg-white/10 text-heritage-ivory/80 border-heritage-gold/30 hover:border-heritage-gold'
-            }`}
-            title={isAudioActive ? t('Tắt âm thanh sông nước & đàn tranh', 'Mute ambient soundscape') : t('Bật âm thanh sông nước & đàn tranh', 'Play ambient soundscape')}
-          >
-            {isAudioActive ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
-          </button>
-
           {/* Bilingual Language Switcher */}
           <button
             onClick={toggleLanguage}

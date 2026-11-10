@@ -2,10 +2,9 @@ import React, { useState, useEffect, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera } from '@react-three/drei';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Volume2, VolumeX, Compass, Sparkles, ArrowRight, Eye, FastForward } from 'lucide-react';
+import { Compass, Sparkles, ArrowRight, Eye, FastForward } from 'lucide-react';
 import { DongNaiMiniatureScene, MINI_LANDMARKS } from './DongNaiMiniatureScene';
 import { useLanguage } from '../../context/LanguageContext';
-import { ambientSound } from '../../utils/audioGenerator';
 
 interface CinematicIntroProps {
   onEnterSite: () => void;
@@ -14,7 +13,6 @@ interface CinematicIntroProps {
 export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onEnterSite }) => {
   const { language, toggleLanguage, t } = useLanguage();
   const [activeLandmark, setActiveLandmark] = useState<number>(0);
-  const [isAudioActive, setIsAudioActive] = useState<boolean>(false);
   const [loadingProgress, setLoadingProgress] = useState<number>(0);
   const [isReady, setIsReady] = useState<boolean>(false);
   const [webGLError, setWebGLError] = useState<boolean>(false);
@@ -43,11 +41,6 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onEnterSite }) =
     }, 5000);
     return () => clearInterval(interval);
   }, [isReady]);
-
-  const toggleSound = () => {
-    const playing = ambientSound.toggle();
-    setIsAudioActive(playing);
-  };
 
   // WebGL Fallback detection
   useEffect(() => {
@@ -83,19 +76,6 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onEnterSite }) =
         </div>
 
         <div className="flex items-center gap-3">
-          {/* Sound Toggle */}
-          <button
-            onClick={toggleSound}
-            aria-label="Toggle Sound"
-            className={`p-2.5 rounded-full border transition-all duration-300 backdrop-blur-md ${
-              isAudioActive
-                ? 'bg-heritage-gold text-heritage-emerald-dark border-white shadow-glow-gold'
-                : 'bg-black/40 text-heritage-ivory/80 border-heritage-gold/30 hover:border-heritage-gold'
-            }`}
-          >
-            {isAudioActive ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
-          </button>
-
           {/* Language Switcher */}
           <button
             onClick={toggleLanguage}

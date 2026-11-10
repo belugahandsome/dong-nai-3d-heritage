@@ -225,25 +225,46 @@ export const InteractiveMapSection: React.FC<InteractiveMapSectionProps> = ({ on
                     </div>
 
                     <div className="flex items-center justify-between mt-2 pt-2 border-t border-white/10 text-[11px] text-heritage-gold">
-                      <span className="flex items-center gap-1">
-                        <MapPin className="w-3 h-3" />
-                        <span className="truncate max-w-[140px]">
+                      <a
+                        href={`https://www.google.com/maps/search/?api=1&query=${dest.coordinates[0]},${dest.coordinates[1]}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="flex items-center gap-1 hover:text-white transition-colors truncate max-w-[170px]"
+                        title={t('Mở vị trí trên Google Maps', 'Open location on Google Maps')}
+                      >
+                        <MapPin className="w-3.5 h-3.5 text-heritage-gold flex-shrink-0" />
+                        <span className="truncate">
                           {language === 'vi' ? dest.address.vi : dest.address.en}
                         </span>
-                      </span>
+                      </a>
 
-                      {dest.landmarkRefId && onOpenLandmark3D && (
-                        <button
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            onOpenLandmark3D(dest.landmarkRefId!);
-                          }}
-                          className="flex items-center gap-1 font-semibold text-heritage-gold hover:text-white transition-colors"
+                      <div className="flex items-center gap-2">
+                        <a
+                          href={`https://www.google.com/maps/search/?api=1&query=${dest.coordinates[0]},${dest.coordinates[1]}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="flex items-center gap-1 px-2 py-0.5 rounded bg-white/10 hover:bg-white/20 text-white text-[10px] transition-all"
+                          title={t('Chỉ đường Google Maps', 'Google Maps Directions')}
                         >
-                          <span>{t('Xem 3D', 'View 3D')}</span>
-                          <ExternalLink className="w-3 h-3" />
-                        </button>
-                      )}
+                          <span>{t('Chỉ đường', 'Directions')}</span>
+                          <ExternalLink className="w-2.5 h-2.5" />
+                        </a>
+
+                        {dest.landmarkRefId && onOpenLandmark3D && (
+                          <button
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              onOpenLandmark3D(dest.landmarkRefId!);
+                            }}
+                            className="flex items-center gap-1 font-semibold text-heritage-gold hover:text-white transition-colors"
+                          >
+                            <span>{t('Xem 3D', '3D')}</span>
+                            <ExternalLink className="w-3 h-3" />
+                          </button>
+                        )}
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -269,17 +290,24 @@ export const InteractiveMapSection: React.FC<InteractiveMapSectionProps> = ({ on
                 <p className="text-xs text-heritage-ivory/80 leading-relaxed mb-3">
                   {language === 'vi' ? selectedDestination.shortSummary.vi : selectedDestination.shortSummary.en}
                 </p>
-                <div className="flex items-center justify-between text-xs text-heritage-ivory/60 border-t border-white/10 pt-2">
-                  <span className="flex items-center gap-1">
-                    <Navigation className="w-3.5 h-3.5 text-heritage-gold" />
-                    {selectedDestination.distanceFromHcmc}
-                  </span>
+                <div className="flex items-center justify-between gap-2 text-xs text-heritage-ivory/60 border-t border-white/10 pt-2.5">
+                  <a
+                    href={`https://www.google.com/maps/search/?api=1&query=${selectedDestination.coordinates[0]},${selectedDestination.coordinates[1]}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium text-[11px] transition-all"
+                  >
+                    <MapPin className="w-3.5 h-3.5 text-heritage-gold" />
+                    <span>{t('Chỉ đường Google Maps', 'Google Maps')}</span>
+                    <ExternalLink className="w-3 h-3 ml-0.5" />
+                  </a>
+
                   {selectedDestination.landmarkRefId && onOpenLandmark3D && (
                     <button
                       onClick={() => onOpenLandmark3D(selectedDestination.landmarkRefId!)}
-                      className="px-3 py-1 rounded-lg bg-heritage-gold text-heritage-emerald-dark font-bold text-xs hover:bg-yellow-400 transition-colors shadow-sm"
+                      className="px-3 py-1.5 rounded-lg bg-heritage-gold text-heritage-emerald-dark font-bold text-xs hover:bg-yellow-400 transition-colors shadow-sm"
                     >
-                      {t('Mở mô hình 3D', 'Open 3D Model')} →
+                      {t('Xem 3D', '3D Model')} →
                     </button>
                   )}
                 </div>
