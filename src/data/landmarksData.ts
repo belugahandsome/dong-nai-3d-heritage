@@ -18,7 +18,7 @@ export const LANDMARKS: Landmark[] = [
       en: 'Buu Long Ward, Bien Hoa City, Dong Nai Province',
     },
     established: '1715 (thời Chúa Nguyễn Phúc Chu)',
-    coordinates: [10.9705, 106.8042],
+    coordinates: [10.9644, 106.8013],
     heroImage: '/images/van-mieu-tran-bien.jpg',
     gallery: [
       '/images/van-mieu-tran-bien.jpg',
@@ -140,7 +140,7 @@ export const LANDMARKS: Landmark[] = [
       en: 'Quang Vinh Ward, Bien Hoa City, Dong Nai Province',
     },
     established: '1790 (Thành Kèn) & 1834 (Minh Mạng xây bằng đá ong)',
-    coordinates: [10.9525, 106.8180],
+    coordinates: [10.9492, 106.8161],
     heroImage: '/images/thanh-co-bien-hoa.jpg',
     gallery: [
       '/images/thanh-co-bien-hoa.jpg',
@@ -242,7 +242,7 @@ export const LANDMARKS: Landmark[] = [
       en: 'Huynh Van Nghe St., Buu Long Ward, Bien Hoa City, Dong Nai',
     },
     established: 'Di tích Danh thắng Quốc gia công nhận năm 1990',
-    coordinates: [10.9650, 106.7989],
+    coordinates: [10.9630, 106.7944],
     heroImage: '/images/buulong-hoang-hon.jpg',
     gallery: [
       '/images/buulong-hoang-hon.jpg',
@@ -334,7 +334,7 @@ export const LANDMARKS: Landmark[] = [
       en: 'Tan Phu & Vinh Cuu Districts, Dong Nai Province',
     },
     established: 'UNESCO công nhận Khu Dự trữ Sinh quyển năm 2001 & Di tích Quốc gia Đặc biệt 2012',
-    coordinates: [11.4239, 107.4293],
+    coordinates: [11.4247, 107.4286],
     heroImage: '/images/cattien-cong-chinh.jpg',
     gallery: [
       '/images/cattien-cong-chinh.jpg',
@@ -417,7 +417,7 @@ export const LANDMARKS: Landmark[] = [
       en: 'Giang Dien Commune, Trang Bom District, Dong Nai Province',
     },
     established: 'Khai thác du lịch sinh thái từ năm 2006',
-    coordinates: [10.9231, 107.0125],
+    coordinates: [10.9153, 106.9936],
     heroImage: '/images/giang-dien-thac.jpg',
     gallery: [
       '/images/giang-dien-thac.jpg',

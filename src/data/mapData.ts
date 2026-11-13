@@ -8,11 +8,11 @@ export const MAP_DESTINATIONS: MapDestination[] = [
       en: 'Tran Bien Temple of Literature',
     },
     category: 'historical',
-    coordinates: [10.9705, 106.8042],
+    coordinates: [10.9644, 106.8013],
     image: '/images/van-mieu-tran-bien.jpg',
     address: {
-      vi: 'Phường Bửu Long, TP. Biên Hòa, Tỉnh Đồng Nai',
-      en: 'Buu Long Ward, Bien Hoa City, Dong Nai Province',
+      vi: 'Tổ 31, Khu phố 2, Phường Bửu Long, TP. Biên Hòa, Tỉnh Đồng Nai',
+      en: 'Quarter 2, Buu Long Ward, Bien Hoa City, Dong Nai Province',
     },
     distanceFromHcmc: '32 km (khoảng 45 phút lái xe)',
     shortSummary: {
@@ -28,11 +28,11 @@ export const MAP_DESTINATIONS: MapDestination[] = [
       en: 'Bien Hoa Ancient Citadel',
     },
     category: 'historical',
-    coordinates: [10.9525, 106.8180],
+    coordinates: [10.9492, 106.8161],
     image: '/images/thanh-co-bien-hoa.jpg',
     address: {
-      vi: 'Đường Phan Chu Trinh, Phường Quang Vinh (sau sáp nhập), TP. Biên Hòa',
-      en: 'Phan Chu Trinh St, Quang Vinh Ward, Bien Hoa City',
+      vi: '129 Đường Phan Chu Trinh, Phường Quang Vinh, TP. Biên Hòa, Tỉnh Đồng Nai',
+      en: '129 Phan Chu Trinh St, Quang Vinh Ward, Bien Hoa City',
     },
     distanceFromHcmc: '30 km (khoảng 40 phút lái xe)',
     shortSummary: {
@@ -48,11 +48,11 @@ export const MAP_DESTINATIONS: MapDestination[] = [
       en: 'Buu Long Scenic Area',
     },
     category: 'natural',
-    coordinates: [10.9650, 106.7989],
+    coordinates: [10.9630, 106.7944],
     image: '/images/buulong-hoang-hon.jpg',
     address: {
-      vi: 'Đường Huỳnh Văn Nghệ, Phường Bửu Long, TP. Biên Hòa',
-      en: 'Huynh Van Nghe St, Buu Long Ward, Bien Hoa City',
+      vi: 'Đường Huỳnh Văn Nghệ, Khu phố 4, Phường Bửu Long, TP. Biên Hòa, Tỉnh Đồng Nai',
+      en: 'Huynh Van Nghe St, Quarter 4, Buu Long Ward, Bien Hoa City',
     },
     distanceFromHcmc: '31 km (khoảng 45 phút)',
     shortSummary: {
@@ -68,11 +68,11 @@ export const MAP_DESTINATIONS: MapDestination[] = [
       en: 'Cat Tien National Park',
     },
     category: 'natural',
-    coordinates: [11.4239, 107.4293],
+    coordinates: [11.4247, 107.4286],
     image: '/images/cattien-cong-chinh.jpg',
     address: {
-      vi: 'Huyện Tân Phú & Vĩnh Cửu, Tỉnh Đồng Nai',
-      en: 'Tan Phu & Vinh Cuu Districts, Dong Nai Province',
+      vi: 'Bến phà & Trung tâm du khách Nam Cát Tiên, Huyện Tân Phú, Tỉnh Đồng Nai',
+      en: 'Ferry Station & Visitor Center, Nam Cat Tien, Tan Phu District, Dong Nai',
     },
     distanceFromHcmc: '150 km (khoảng 3 giờ lái xe)',
     shortSummary: {
@@ -88,11 +88,11 @@ export const MAP_DESTINATIONS: MapDestination[] = [
       en: 'Giang Dien Waterfall',
     },
     category: 'natural',
-    coordinates: [10.9231, 107.0125],
+    coordinates: [10.9153, 106.9936],
     image: '/images/giang-dien-thac.jpg',
     address: {
-      vi: 'Xã Giang Điền, Huyện Trảng Bom, Tỉnh Đồng Nai',
-      en: 'Giang Dien Commune, Trang Bom District, Dong Nai',
+      vi: '104/4 Ấp Hòa Bình, Xã Giang Điền, Huyện Trảng Bom, Tỉnh Đồng Nai',
+      en: '104/4 Hoa Binh Hamlet, Giang Dien Commune, Trang Bom District, Dong Nai',
     },
     distanceFromHcmc: '45 km (khoảng 1 giờ lái xe)',
     shortSummary: {
@@ -108,7 +108,7 @@ export const MAP_DESTINATIONS: MapDestination[] = [
       en: 'Tri An Lake & War Zone D Nature',
     },
     category: 'natural',
-    coordinates: [11.1350, 107.0350],
+    coordinates: [11.1053, 106.9844],
     image: '/images/cattien-ho-xanh.jpg',
     address: {
       vi: 'Thị trấn Vĩnh An, Huyện Vĩnh Cửu, Tỉnh Đồng Nai',
@@ -127,11 +127,11 @@ export const MAP_DESTINATIONS: MapDestination[] = [
       en: "M'Nong Brocade Weaving Cultural Space",
     },
     category: 'craft',
-    coordinates: [11.3850, 107.3820],
+    coordinates: [11.3644, 107.3608],
     image: '/images/tho-cam-mnong.jpg',
     address: {
-      vi: 'Vùng đệm rừng Cát Tiên, Huyện Tân Phú, Tỉnh Đồng Nai',
-      en: 'Cat Tien Buffer Zone, Tan Phu District, Dong Nai',
+      vi: 'Làng thổ cẩm dân tộc Tà Lài, Xã Tà Lài, Huyện Tân Phú, Tỉnh Đồng Nai',
+      en: 'Ta Lai Ethnic Weaving Village, Ta Lai Commune, Tan Phu District, Dong Nai',
     },
     distanceFromHcmc: '140 km (khoảng 2 giờ 45 phút)',
     shortSummary: {
@@ -146,11 +146,11 @@ export const MAP_DESTINATIONS: MapDestination[] = [
       en: 'Bien Hoa Pottery Heritage Village',
     },
     category: 'craft',
-    coordinates: [10.9412, 106.8291],
+    coordinates: [10.9250, 106.8360],
     image: '/images/gom-bien-hoa.jpg',
     address: {
-      vi: 'Phường Tân Vạn & Hóa An, TP. Biên Hòa',
-      en: 'Tan Van & Hoa An Wards, Bien Hoa City',
+      vi: 'Đường Bùi Hữu Nghĩa, Phường Tân Vạn, TP. Biên Hòa, Tỉnh Đồng Nai',
+      en: 'Bui Huu Nghia St, Tan Van Ward, Bien Hoa City',
     },
     distanceFromHcmc: '28 km (khoảng 35 phút)',
     shortSummary: {
@@ -165,11 +165,11 @@ export const MAP_DESTINATIONS: MapDestination[] = [
       en: 'Tan Trieu Pomelo & Wine Islet',
     },
     category: 'cuisine',
-    coordinates: [10.9850, 106.7820],
+    coordinates: [10.9928, 106.7794],
     image: '/images/buoi-tan-trieu.jpg',
     address: {
-      vi: 'Cù lao Tân Triều, Xã Tân Bình, Huyện Vĩnh Cửu',
-      en: 'Tan Trieu Islet, Tan Binh Commune, Vinh Cuu District',
+      vi: '109/7 Hương Lộ 9, Ấp Vĩnh Hiệp, Xã Tân Bình, Huyện Vĩnh Cửu, Tỉnh Đồng Nai',
+      en: '109/7 Huong Lo 9, Tan Binh Commune, Vinh Cuu District, Dong Nai',
     },
     distanceFromHcmc: '35 km (khoảng 50 phút)',
     shortSummary: {
@@ -184,11 +184,11 @@ export const MAP_DESTINATIONS: MapDestination[] = [
       en: 'Dong Nai Cashew Capital (Roasted Cashews)',
     },
     category: 'cuisine',
-    coordinates: [11.1250, 107.1820],
+    coordinates: [11.1903, 107.3482],
     image: '/images/hat-dieu-dong-nai.jpg',
     address: {
-      vi: 'Huyện Định Quán, Xuân Lộc & Thống Nhất',
-      en: 'Dinh Quan, Xuan Loc & Thong Nhat Districts',
+      vi: 'Quốc Lộ 20, Thị trấn Định Quán, Huyện Định Quán, Tỉnh Đồng Nai',
+      en: 'National Route 20, Dinh Quan Town, Dinh Quan District, Dong Nai',
     },
     distanceFromHcmc: '75 km (khoảng 1 giờ 30 phút)',
     shortSummary: {
@@ -203,11 +203,11 @@ export const MAP_DESTINATIONS: MapDestination[] = [
       en: 'Bien Hoa Fried Puffed Sticky Rice',
     },
     category: 'cuisine',
-    coordinates: [10.9500, 106.8200],
+    coordinates: [10.9452, 106.8228],
     image: '/images/xoi-chien-phong.jpg',
     address: {
-      vi: 'TP. Biên Hòa, Tỉnh Đồng Nai',
-      en: 'Bien Hoa City, Dong Nai Province',
+      vi: 'Đường Hà Huy Giáp, Phường Quyết Thắng & Thống Nhất, TP. Biên Hòa, Tỉnh Đồng Nai',
+      en: 'Ha Huy Giap St, Quyet Thang Ward, Bien Hoa City, Dong Nai Province',
     },
     distanceFromHcmc: '30 km (khoảng 40 phút)',
     shortSummary: {
