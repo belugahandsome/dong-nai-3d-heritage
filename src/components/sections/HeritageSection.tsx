@@ -138,26 +138,26 @@ export const HeritageSection: React.FC<HeritageSectionProps> = ({
                   <div className={`lg:col-span-6 p-8 lg:p-10 flex flex-col justify-between ${isReversed ? 'lg:order-1' : ''}`}>
                     <div>
                       {/* Subtitle / Region */}
-                      <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-heritage-bronze mb-2">
-                        <MapPin className="w-3.5 h-3.5 text-heritage-gold" />
+                      <div className="flex items-center gap-2 text-xs sm:text-sm font-semibold uppercase tracking-wider text-heritage-bronze mb-2">
+                        <MapPin className="w-4 h-4 text-heritage-gold" />
                         <span>{language === 'vi' ? landmark.location.vi : landmark.location.en}</span>
                       </div>
 
                       {/* Main Title */}
-                      <h3 className="text-2xl sm:text-3xl font-serif font-bold text-heritage-emerald-dark mb-2">
+                      <h3 className="text-2xl sm:text-4xl font-serif font-bold text-heritage-emerald-dark mb-2">
                         {language === 'vi' ? landmark.name.vi : landmark.name.en}
                       </h3>
-                      <p className="text-sm font-serif italic text-heritage-gold-dark mb-6">
+                      <p className="text-base sm:text-lg font-serif italic text-heritage-gold-dark mb-6">
                         "{language === 'vi' ? landmark.subtitle.vi : landmark.subtitle.en}"
                       </p>
 
                       {/* Sub-navigation tabs inside card */}
-                      <div className="flex items-center gap-2 border-b border-stone-200 pb-2 mb-4 overflow-x-auto">
+                      <div className="flex items-center gap-3 border-b border-stone-200 pb-2.5 mb-5 overflow-x-auto">
                         <button
                           onClick={() => setActiveTab(landmark.id, 'overview')}
-                          className={`text-xs font-semibold pb-1 border-b-2 transition-all whitespace-nowrap ${
+                          className={`text-sm sm:text-base font-semibold pb-1.5 border-b-2 transition-all whitespace-nowrap ${
                             currentTab === 'overview'
-                              ? 'border-heritage-emerald-dark text-heritage-emerald-dark'
+                              ? 'border-heritage-emerald-dark text-heritage-emerald-dark font-bold'
                               : 'border-transparent text-stone-500 hover:text-stone-800'
                           }`}
                         >
@@ -165,9 +165,9 @@ export const HeritageSection: React.FC<HeritageSectionProps> = ({
                         </button>
                         <button
                           onClick={() => setActiveTab(landmark.id, 'history')}
-                          className={`text-xs font-semibold pb-1 border-b-2 transition-all whitespace-nowrap ${
+                          className={`text-sm sm:text-base font-semibold pb-1.5 border-b-2 transition-all whitespace-nowrap ${
                             currentTab === 'history'
-                              ? 'border-heritage-emerald-dark text-heritage-emerald-dark'
+                              ? 'border-heritage-emerald-dark text-heritage-emerald-dark font-bold'
                               : 'border-transparent text-stone-500 hover:text-stone-800'
                           }`}
                         >
@@ -175,9 +175,9 @@ export const HeritageSection: React.FC<HeritageSectionProps> = ({
                         </button>
                         <button
                           onClick={() => setActiveTab(landmark.id, 'architecture')}
-                          className={`text-xs font-semibold pb-1 border-b-2 transition-all whitespace-nowrap ${
+                          className={`text-sm sm:text-base font-semibold pb-1.5 border-b-2 transition-all whitespace-nowrap ${
                             currentTab === 'architecture'
-                              ? 'border-heritage-emerald-dark text-heritage-emerald-dark'
+                              ? 'border-heritage-emerald-dark text-heritage-emerald-dark font-bold'
                               : 'border-transparent text-stone-500 hover:text-stone-800'
                           }`}
                         >
@@ -185,9 +185,9 @@ export const HeritageSection: React.FC<HeritageSectionProps> = ({
                         </button>
                         <button
                           onClick={() => setActiveTab(landmark.id, 'visitor')}
-                          className={`text-xs font-semibold pb-1 border-b-2 transition-all whitespace-nowrap ${
+                          className={`text-sm sm:text-base font-semibold pb-1.5 border-b-2 transition-all whitespace-nowrap ${
                             currentTab === 'visitor'
-                              ? 'border-heritage-emerald-dark text-heritage-emerald-dark'
+                              ? 'border-heritage-emerald-dark text-heritage-emerald-dark font-bold'
                               : 'border-transparent text-stone-500 hover:text-stone-800'
                           }`}
                         >
@@ -196,13 +196,13 @@ export const HeritageSection: React.FC<HeritageSectionProps> = ({
                       </div>
 
                       {/* Tab Content Display */}
-                      <div className="min-h-[140px] text-sm text-stone-700 leading-relaxed font-light">
+                      <div className="min-h-[150px] text-base sm:text-lg text-stone-800 leading-relaxed font-light">
                         {currentTab === 'overview' && (
                           <div>
                             <p className="mb-3">
                               {language === 'vi' ? landmark.shortDesc.vi : landmark.shortDesc.en}
                             </p>
-                            <p className="text-xs text-stone-500 line-clamp-3">
+                            <p className="text-sm sm:text-base text-stone-600 line-clamp-3">
                               {language === 'vi' ? landmark.fullDesc.vi : landmark.fullDesc.en}
                             </p>
                           </div>
@@ -214,9 +214,9 @@ export const HeritageSection: React.FC<HeritageSectionProps> = ({
                               {language === 'vi' ? landmark.historicalSignificance.vi : landmark.historicalSignificance.en}
                             </p>
                             {landmark.timeline && (
-                              <div className="space-y-2 mt-2 border-l-2 border-heritage-gold/40 pl-3">
+                              <div className="space-y-2.5 mt-3 border-l-2 border-heritage-gold/50 pl-3.5">
                                 {landmark.timeline.slice(0, 3).map((item, idx) => (
-                                  <div key={idx} className="text-xs">
+                                  <div key={idx} className="text-sm">
                                     <span className="font-bold text-heritage-bronze">{item.year}: </span>
                                     <span>{language === 'vi' ? item.event.vi : item.event.en}</span>
                                   </div>
@@ -235,19 +235,19 @@ export const HeritageSection: React.FC<HeritageSectionProps> = ({
                         )}
 
                         {currentTab === 'visitor' && (
-                          <div className="space-y-2 text-xs">
+                          <div className="space-y-2.5 text-sm sm:text-base">
                             <div className="flex items-center gap-2">
-                              <Clock className="w-4 h-4 text-heritage-gold" />
+                              <Clock className="w-4 h-4 text-heritage-gold flex-shrink-0" />
                               <span className="font-semibold">{t('Giờ mở cửa', 'Opening Hours')}: </span>
                               <span>{landmark.visitorInfo.openingHours}</span>
                             </div>
                             <div className="flex items-center gap-2">
-                              <Ticket className="w-4 h-4 text-heritage-gold" />
+                              <Ticket className="w-4 h-4 text-heritage-gold flex-shrink-0" />
                               <span className="font-semibold">{t('Giá vé', 'Admission')}: </span>
                               <span>{language === 'vi' ? landmark.visitorInfo.ticketPrice.vi : landmark.visitorInfo.ticketPrice.en}</span>
                             </div>
                             <div className="flex items-center gap-2">
-                              <Calendar className="w-4 h-4 text-heritage-gold" />
+                              <Calendar className="w-4 h-4 text-heritage-gold flex-shrink-0" />
                               <span className="font-semibold">{t('Thời điểm lý tưởng', 'Best Time')}: </span>
                               <span>{language === 'vi' ? landmark.visitorInfo.bestTimeToVisit.vi : landmark.visitorInfo.bestTimeToVisit.en}</span>
                             </div>

@@ -53,7 +53,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenIntro, onExploreHeritage }) =>
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-3xl text-sm sm:text-base md:text-lg text-heritage-ivory/80 font-light leading-relaxed mb-10"
+          className="max-w-3xl text-base sm:text-lg md:text-xl text-heritage-ivory/90 font-light leading-relaxed mb-10"
         >
           {t(
             'Khởi hành chuyến viễn du tương tác không gian 3D qua hơn 325 năm trầm tích lịch sử xứ Trấn Biên. Nơi dòng sông Đồng Nai cuộn chảy nuôi dưỡng những cổ tự trang nghiêm, cánh rừng mưa nhiệt đới di sản thế giới Cát Tiên, làng gốm men ngọc danh tiếng và nền ẩm thực phương Nam trác tuyệt.',
@@ -96,7 +96,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenIntro, onExploreHeritage }) =>
             <span className="text-2xl sm:text-4xl font-serif font-bold text-heritage-gold">
               325+
             </span>
-            <span className="text-[11px] uppercase tracking-wider text-heritage-ivory/70 mt-1 font-medium">
+            <span className="text-xs sm:text-sm uppercase tracking-wider text-heritage-ivory/80 mt-1 font-medium">
               {t('Năm Khai Mở Đàng Trong (1698)', 'Years Southern Heritage')}
             </span>
           </div>
@@ -105,7 +105,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenIntro, onExploreHeritage }) =>
             <span className="text-2xl sm:text-4xl font-serif font-bold text-heritage-gold">
               5
             </span>
-            <span className="text-[11px] uppercase tracking-wider text-heritage-ivory/70 mt-1 font-medium">
+            <span className="text-xs sm:text-sm uppercase tracking-wider text-heritage-ivory/80 mt-1 font-medium">
               {t('Di Sản 3D Tương Tác', 'Interactive 3D Landmarks')}
             </span>
           </div>
@@ -114,7 +114,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenIntro, onExploreHeritage }) =>
             <span className="text-2xl sm:text-4xl font-serif font-bold text-heritage-gold">
               UNESCO
             </span>
-            <span className="text-[11px] uppercase tracking-wider text-heritage-ivory/70 mt-1 font-medium">
+            <span className="text-xs sm:text-sm uppercase tracking-wider text-heritage-ivory/80 mt-1 font-medium">
               {t('Khu Dự Trữ Sinh Quyển (Cát Tiên)', 'World Biosphere Reserve')}
             </span>
           </div>
@@ -123,7 +123,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenIntro, onExploreHeritage }) =>
             <span className="text-2xl sm:text-4xl font-serif font-bold text-heritage-gold">
               300+
             </span>
-            <span className="text-[11px] uppercase tracking-wider text-heritage-ivory/70 mt-1 font-medium">
+            <span className="text-xs sm:text-sm uppercase tracking-wider text-heritage-ivory/80 mt-1 font-medium">
               {t('Năm Gốm Men Xanh Đồng', 'Years Ceramic Heritage')}
             </span>
           </div>

@@ -5,6 +5,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    font-size: 17px; /* Increased baseline font size for comfortable reading and balance */
+  }
+
+  body {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   
   /* Custom bronze/gold scrollbar */

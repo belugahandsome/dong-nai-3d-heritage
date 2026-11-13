@@ -44,7 +44,7 @@ export const AboutSection: React.FC = () => {
               <h3 className="text-2xl font-serif font-bold text-heritage-emerald-dark mb-3">
                 {t('Vị Trí Chiến Lược Trên Bản Đồ Việt Nam', 'Strategic Hub on Vietnam’s Map')}
               </h3>
-              <p className="text-sm text-stone-700 leading-relaxed font-light mb-4">
+              <p className="text-base sm:text-lg text-stone-800 leading-relaxed font-light mb-4">
                 {t(
                   'Đồng Nai nằm ở trung tâm vùng Đông Nam Bộ và Vùng kinh tế trọng điểm phía Nam. Tỉnh tiếp giáp 6 tỉnh thành: phía Tây giáp TP. Hồ Chí Minh và Bình Dương, phía Bắc giáp Bình Phước và Lâm Đồng, phía Đông giáp Bình Thuận, phía Nam giáp Bà Rịa - Vũng Tàu. Đây là cửa ngõ giao thương đường bộ, đường thủy, đường sắt huyết mạch kết nối Nam Bộ với Tây Nguyên và Duyên hải miền Trung.',
                   'Dong Nai occupies the heart of the Southeastern Key Economic Zone, bordering Ho Chi Minh City, Binh Duong, Binh Phuoc, Lam Dong, Binh Thuan, and Ba Ria - Vung Tau. It functions as the nation’s prime transit nexus connecting the South with the Central Highlands and South Central Coast.'
@@ -52,12 +52,12 @@ export const AboutSection: React.FC = () => {
               </p>
 
               {/* Administrative Consolidation Highlights */}
-              <div className="p-4 rounded-2xl bg-stone-50 border border-stone-200 space-y-2 mb-4">
-                <span className="text-xs font-bold text-heritage-emerald-dark flex items-center gap-1.5">
+              <div className="p-5 rounded-2xl bg-stone-50 border border-stone-200 space-y-2.5 mb-5">
+                <span className="text-sm font-bold text-heritage-emerald-dark flex items-center gap-1.5">
                   <MapPin className="w-4 h-4 text-heritage-ruby" />
                   {t('Sắp xếp, Sáp nhập Đơn vị Hành chính (Giai đoạn 2023 - 2025):', 'Administrative Realignment & Consolidation (2023 - 2025):')}
                 </span>
-                <p className="text-xs text-stone-600 font-light leading-relaxed">
+                <p className="text-sm sm:text-base text-stone-700 font-light leading-relaxed">
                   {t(
                     'Thực hiện Nghị quyết của Ủy ban Thường vụ Quốc hội, tỉnh Đồng Nai và TP. Biên Hòa đã hoàn thành sáp nhập các phường trung tâm (như sáp nhập phường Hòa Bình, Thanh Bình, Quyết Thắng, Quang Vinh...) nhằm tinh gọn bộ máy, mở rộng không gian phát triển đô thị dịch vụ, du lịch văn hóa và công nghiệp hiện đại.',
                     'Under National Assembly resolutions, Dong Nai Province and Bien Hoa City successfully consolidated central urban wards to streamline governance and unlock expanded urban corridors for high-tech industry, services, and cultural tourism.'
@@ -105,28 +105,28 @@ export const AboutSection: React.FC = () => {
               </p>
 
               {/* 3 Pillars of Genesis */}
-              <div className="space-y-3 mb-6">
-                <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10">
-                  <span className="w-6 h-6 rounded-full bg-heritage-gold text-heritage-emerald-dark font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
+              <div className="space-y-3.5 mb-6">
+                <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                  <span className="w-7 h-7 rounded-full bg-heritage-gold text-heritage-emerald-dark font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">1</span>
                   <div>
-                    <h5 className="text-xs font-bold text-heritage-gold">{t('Cái Nôi Nho Học & Văn Hiến', 'Cradle of Southern Scholarship')}</h5>
-                    <p className="text-[11px] text-heritage-ivory/70 font-light">{t('Năm 1715, Văn Miếu Trấn Biên ra đời sớm nhất xứ Đàng Trong, phụng thờ Khổng Tử và tôn vinh đạo học.', 'Tran Bien Temple was built in 1715 as the first Confucian academy in the South.')}</p>
+                    <h5 className="text-sm sm:text-base font-bold text-heritage-gold">{t('Cái Nôi Nho Học & Văn Hiến', 'Cradle of Southern Scholarship')}</h5>
+                    <p className="text-xs sm:text-sm text-heritage-ivory/80 font-light leading-relaxed">{t('Năm 1715, Văn Miếu Trấn Biên ra đời sớm nhất xứ Đàng Trong, phụng thờ Khổng Tử và tôn vinh đạo học.', 'Tran Bien Temple was built in 1715 as the first Confucian academy in the South.')}</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10">
-                  <span className="w-6 h-6 rounded-full bg-heritage-gold text-heritage-emerald-dark font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
+                <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                  <span className="w-7 h-7 rounded-full bg-heritage-gold text-heritage-emerald-dark font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">2</span>
                   <div>
-                    <h5 className="text-xs font-bold text-heritage-gold">{t('Giao Thoa Đa Văn Hóa', 'Crossroads of Diverse Cultures')}</h5>
-                    <p className="text-[11px] text-heritage-ivory/70 font-light">{t('Sự hòa quyện giữa văn hóa người Việt, người Hoa, người M’Nông, Chơro, Mạ cùng các nghề gốm men xanh đồng và dệt thổ cẩm di sản.', 'Harmonious coexistence of Viet, Chinese, M’Nong, Choro, and Ma ethnic communities.')}</p>
+                    <h5 className="text-sm sm:text-base font-bold text-heritage-gold">{t('Giao Thoa Đa Văn Hóa', 'Crossroads of Diverse Cultures')}</h5>
+                    <p className="text-xs sm:text-sm text-heritage-ivory/80 font-light leading-relaxed">{t('Sự hòa quyện giữa văn hóa người Việt, người Hoa, người M’Nông, Chơro, Mạ cùng các nghề gốm men xanh đồng và dệt thổ cẩm di sản.', 'Harmonious coexistence of Viet, Chinese, M’Nong, Choro, and Ma ethnic communities.')}</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10">
-                  <span className="w-6 h-6 rounded-full bg-heritage-gold text-heritage-emerald-dark font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
+                <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                  <span className="w-7 h-7 rounded-full bg-heritage-gold text-heritage-emerald-dark font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5">3</span>
                   <div>
-                    <h5 className="text-xs font-bold text-heritage-gold">{t('Đất Lành Chim Đậu & Phù Sa Màu Mỡ', 'Fertile Alluvium & Abundant Harvests')}</h5>
-                    <p className="text-[11px] text-heritage-ivory/70 font-light">{t('Đất đỏ bazan và sông Đồng Nai nuôi dưỡng những miệt vườn bưởi Tân Triều, thủ phủ điều và đại ngàn Cát Tiên.', 'Volcanic basalt earth nourishing Tan Trieu pomelo orchards and global cashew plantations.')}</p>
+                    <h5 className="text-sm sm:text-base font-bold text-heritage-gold">{t('Đất Lành Chim Đậu & Phù Sa Màu Mỡ', 'Fertile Alluvium & Abundant Harvests')}</h5>
+                    <p className="text-xs sm:text-sm text-heritage-ivory/80 font-light leading-relaxed">{t('Đất đỏ bazan và sông Đồng Nai nuôi dưỡng những miệt vườn bưởi Tân Triều, thủ phủ điều và đại ngàn Cát Tiên.', 'Volcanic basalt earth nourishing Tan Trieu pomelo orchards and global cashew plantations.')}</p>
                   </div>
                 </div>
               </div>

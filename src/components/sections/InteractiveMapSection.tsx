@@ -203,32 +203,32 @@ export const InteractiveMapSection: React.FC<InteractiveMapSectionProps> = ({ on
                   />
                   <div className="flex-1 flex flex-col justify-between">
                     <div>
-                      <div className="flex items-center justify-between gap-1 mb-1">
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-heritage-gold">
+                      <div className="flex items-center justify-between gap-1 mb-1.5">
+                        <span className="text-xs font-bold uppercase tracking-wider text-heritage-gold">
                           {dest.category === 'historical' && t('Di Tích', 'Historical')}
                           {dest.category === 'natural' && t('Danh Thắng', 'Natural')}
                           {dest.category === 'craft' && t('Làng Nghề', 'Craft')}
                           {dest.category === 'cuisine' && t('Ẩm Thực', 'Cuisine')}
                         </span>
-                        <span className="text-[10px] text-heritage-ivory/50">
+                        <span className="text-xs text-heritage-ivory/60">
                           {dest.distanceFromHcmc}
                         </span>
                       </div>
-                      <h4 className="text-base font-serif font-bold text-heritage-ivory leading-tight">
+                      <h4 className="text-base sm:text-lg font-serif font-bold text-heritage-ivory leading-tight">
                         {language === 'vi' ? dest.name.vi : dest.name.en}
                       </h4>
-                      <p className="text-xs text-heritage-ivory/70 line-clamp-2 mt-1 font-light">
+                      <p className="text-xs sm:text-sm text-heritage-ivory/80 line-clamp-2 mt-1.5 font-light leading-relaxed">
                         {language === 'vi' ? dest.shortSummary.vi : dest.shortSummary.en}
                       </p>
                     </div>
 
-                    <div className="flex items-center justify-between mt-2 pt-2 border-t border-white/10 text-[11px] text-heritage-gold">
+                    <div className="flex items-center justify-between mt-3 pt-2.5 border-t border-white/10 text-xs text-heritage-gold">
                       <a
                         href={`https://www.google.com/maps/search/?api=1&query=${dest.coordinates[0]},${dest.coordinates[1]}`}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
-                        className="flex items-center gap-1 hover:text-white transition-colors truncate max-w-[170px]"
+                        className="flex items-center gap-1.5 hover:text-white transition-colors truncate max-w-[170px]"
                         title={t('Mở vị trí trên Google Maps', 'Open location on Google Maps')}
                       >
                         <MapPin className="w-3.5 h-3.5 text-heritage-gold flex-shrink-0" />
@@ -243,7 +243,7 @@ export const InteractiveMapSection: React.FC<InteractiveMapSectionProps> = ({ on
                           target="_blank"
                           rel="noopener noreferrer"
                           onClick={(e) => e.stopPropagation()}
-                          className="flex items-center gap-1 px-2.5 py-1 rounded bg-white/10 hover:bg-white/20 text-white text-[11px] transition-all font-medium"
+                          className="flex items-center gap-1 px-2.5 py-1 rounded bg-white/10 hover:bg-white/20 text-white text-xs transition-all font-medium"
                           title={t('Chỉ đường Google Maps', 'Google Maps Directions')}
                         >
                           <span>{t('Chỉ đường', 'Directions')}</span>
@@ -256,10 +256,10 @@ export const InteractiveMapSection: React.FC<InteractiveMapSectionProps> = ({ on
                               e.stopPropagation();
                               onOpenLandmark3D(dest.landmarkRefId!);
                             }}
-                            className="flex items-center gap-1 font-semibold text-heritage-gold hover:text-white transition-colors text-[11px]"
+                            className="flex items-center gap-1 font-semibold text-heritage-gold hover:text-white transition-colors text-xs"
                           >
                             <span>{t('Xem 3D', '3D')}</span>
-                            <Eye className="w-3 h-3" />
+                            <Eye className="w-3.5 h-3.5" />
                           </button>
                         )}
                       </div>
