@@ -304,15 +304,10 @@ export const CraftsAndCuisineSection: React.FC = () => {
                       </div>
                     </div>
 
-                    <div className="p-4 flex-1 flex flex-col justify-between bg-stone-900/90">
-                      <div>
-                        <h4 className="text-sm sm:text-base font-serif font-bold text-white group-hover:text-heritage-gold transition-colors leading-snug mb-1">
-                          {language === 'vi' ? item.title.vi : item.title.en}
-                        </h4>
-                        <p className="text-xs text-stone-300 line-clamp-3 leading-relaxed font-light">
-                          {language === 'vi' ? item.desc.vi : item.desc.en}
-                        </p>
-                      </div>
+                    <div className="p-4 bg-stone-900/90 text-center">
+                      <h4 className="text-sm sm:text-base font-serif font-bold text-white group-hover:text-heritage-gold transition-colors leading-snug">
+                        {language === 'vi' ? item.title.vi : item.title.en}
+                      </h4>
                     </div>
                   </div>
                 ))}
