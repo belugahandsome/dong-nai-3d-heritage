@@ -158,6 +158,7 @@ export const CRAFTS_DATA: CraftVillage[] = [
     image: '/images/buoi-tan-trieu.jpg',
     gallery: [
       '/images/buoi-tan-trieu.jpg',
+      '/images/ruou-buoi.jpg',
       '/images/goi-buoi-salad.jpg',
     ],
     age: 'Từ năm 1869 (hơn 150 năm lịch sử)',
