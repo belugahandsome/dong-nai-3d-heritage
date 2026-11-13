@@ -92,6 +92,7 @@ export const Virtual360Modal: React.FC<Virtual360ModalProps> = ({ landmark, onCl
           <Canvas camera={{ position: [0, 0, 0.1], fov: 75 }}>
             <Suspense fallback={null}>
               <SpherePanorama
+                key={vantageImages[currentVantage] || landmark.heroImage}
                 url={vantageImages[currentVantage] || landmark.heroImage}
                 isAutoRotate={isAutoRotate}
               />
