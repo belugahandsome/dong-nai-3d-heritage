@@ -97,6 +97,8 @@ export interface CraftVillage {
     step: number;
     title: { vi: string; en: string };
     desc: { vi: string; en: string };
+    image?: string;
+    images?: string[];
   }[];
   culturalValue: {
     vi: string;

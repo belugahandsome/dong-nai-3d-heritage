@@ -103,6 +103,7 @@ export const CRAFTS_DATA: CraftVillage[] = [
           vi: 'Khai thác đất sét dẻo mịn từ phù sa sông Đồng Nai, ủ lắng và lọc kỹ để loại bỏ tạp chất.',
           en: 'Extracting fine plastic clay from Dong Nai river silt, aged and filtered meticulously for elasticity.',
         },
+        image: '/images/quy-trinh-gom-1-dat-set.jpg',
       },
       {
         step: 2,
@@ -111,6 +112,11 @@ export const CRAFTS_DATA: CraftVillage[] = [
           vi: 'Nghệ nhân dùng bàn xoay tạo hình thủ công hoặc đúc khuôn chamotte, sau đó khắc chìm họa tiết rồng phượng, hoa sen tinh xảo.',
           en: 'Artisans shape pieces on potter wheels or chamotte molds, followed by hand-incising intricate dragons, phoenixes, and lotus motifs.',
         },
+        image: '/images/quy-trinh-gom-2-chuot-gom.jpg',
+        images: [
+          '/images/quy-trinh-gom-2-chuot-gom.jpg',
+          '/images/quy-trinh-gom-2-khac-net.jpg',
+        ],
       },
       {
         step: 3,
@@ -119,6 +125,7 @@ export const CRAFTS_DATA: CraftVillage[] = [
           vi: 'Dùng bút lông chấm men xanh đồng, men đá đỏ và men thủy tinh theo từng ô khắc chìm để tạo độ tương phản.',
           en: 'Applying copper-green, red laterite, and glass glazes within incised contours creating brilliant contrast.',
         },
+        image: '/images/quy-trinh-gom-3-cham-men.jpg',
       },
       {
         step: 4,
@@ -127,6 +134,7 @@ export const CRAFTS_DATA: CraftVillage[] = [
           vi: 'Nung trong các lò bầu, lò rồng với nhiệt độ trên 1.200°C liên tục suốt 48 giờ để men trổ hoa văn kỳ ảo.',
           en: 'Firing in traditional dragon wood-fired kilns above 1,200°C for 48 hours to reveal crystalline glaze blossoms.',
         },
+        image: '/images/quy-trinh-gom-4-lo-cui.jpg',
       },
     ],
     culturalValue: {

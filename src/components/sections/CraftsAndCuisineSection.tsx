@@ -217,18 +217,62 @@ export const CraftsAndCuisineSection: React.FC = () => {
                     </h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       {selectedCraft.processSteps.map((step) => (
-                        <div key={step.step} className="p-4 rounded-xl bg-stone-900/80 border border-white/15">
-                          <div className="flex items-center gap-2.5 mb-2">
-                            <span className="w-7 h-7 rounded-full bg-heritage-gold text-heritage-emerald-dark font-bold text-xs flex items-center justify-center flex-shrink-0">
-                              {step.step}
-                            </span>
-                            <span className="text-sm font-bold text-heritage-ivory">
-                              {language === 'vi' ? step.title.vi : step.title.en}
-                            </span>
+                        <div key={step.step} className="p-4 rounded-xl bg-stone-900/80 border border-white/15 flex flex-col justify-between hover:border-heritage-gold/40 transition-colors">
+                          <div>
+                            <div className="flex items-center gap-2.5 mb-2.5">
+                              <span className="w-7 h-7 rounded-full bg-heritage-gold text-heritage-emerald-dark font-bold text-xs flex items-center justify-center flex-shrink-0">
+                                {step.step}
+                              </span>
+                              <span className="text-sm font-bold text-heritage-ivory">
+                                {language === 'vi' ? step.title.vi : step.title.en}
+                              </span>
+                            </div>
+
+                            {/* Step Image(s) */}
+                            {step.images && step.images.length > 1 ? (
+                              <div className="grid grid-cols-2 gap-2 my-2.5">
+                                {step.images.map((img, idx) => (
+                                  <div
+                                    key={idx}
+                                    onClick={() => setActivePhotoModal(img)}
+                                    className="group/img relative h-28 sm:h-32 rounded-lg overflow-hidden border border-white/10 hover:border-heritage-gold cursor-pointer"
+                                  >
+                                    <img
+                                      src={img}
+                                      alt={`${language === 'vi' ? step.title.vi : step.title.en} - ${idx + 1}`}
+                                      className="w-full h-full object-cover transition-transform duration-300 group-hover/img:scale-105"
+                                    />
+                                    <div className="absolute inset-0 bg-black/20 group-hover/img:bg-transparent transition-colors" />
+                                    <div className="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-black/60 flex items-center justify-center text-heritage-gold opacity-80 group-hover/img:opacity-100">
+                                      <Eye className="w-3.5 h-3.5" />
+                                    </div>
+                                    <span className="absolute bottom-1 left-1 px-1.5 py-0.5 rounded bg-black/70 text-[10px] font-medium text-stone-200">
+                                      {idx === 0 ? t('Chuốt gốm', 'Throwing') : t('Khắc nét', 'Incising')}
+                                    </span>
+                                  </div>
+                                ))}
+                              </div>
+                            ) : step.image ? (
+                              <div
+                                onClick={() => setActivePhotoModal(step.image!)}
+                                className="group/img relative h-28 sm:h-32 rounded-lg overflow-hidden border border-white/10 hover:border-heritage-gold cursor-pointer my-2.5"
+                              >
+                                <img
+                                  src={step.image}
+                                  alt={language === 'vi' ? step.title.vi : step.title.en}
+                                  className="w-full h-full object-cover transition-transform duration-300 group-hover/img:scale-105"
+                                />
+                                <div className="absolute inset-0 bg-black/20 group-hover/img:bg-transparent transition-colors" />
+                                <div className="absolute bottom-1 right-1 w-6 h-6 rounded-full bg-black/60 flex items-center justify-center text-heritage-gold opacity-80 group-hover/img:opacity-100">
+                                  <Eye className="w-3.5 h-3.5" />
+                                </div>
+                              </div>
+                            ) : null}
+
+                            <p className="text-xs sm:text-sm text-stone-300 font-light leading-relaxed">
+                              {language === 'vi' ? step.desc.vi : step.desc.en}
+                            </p>
                           </div>
-                          <p className="text-xs sm:text-sm text-stone-300 font-light leading-relaxed pl-9">
-                            {language === 'vi' ? step.desc.vi : step.desc.en}
-                          </p>
                         </div>
                       ))}
                     </div>
