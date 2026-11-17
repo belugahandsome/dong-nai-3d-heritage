@@ -82,8 +82,8 @@ export const CRAFTS_DATA: CraftVillage[] = [
       en: 'The legendary "Vert de Bien Hoa" copper jade glaze renowned across continents for over three centuries',
     },
     location: {
-      vi: 'Phường Bửu Long, Tân Vạn, Hóa An (dọc hữu ngạn sông Đồng Nai)',
-      en: 'Buu Long, Tan Van, Hoa An Wards (along the banks of Dong Nai River)',
+      vi: 'Lò Gốm cổ chùa Giác Minh, tỉnh Đồng Nai',
+      en: 'Giac Minh Pagoda Ancient Pottery Kiln, Dong Nai Province',
     },
     image: '/images/gom-bien-hoa.jpg',
     gallery: [

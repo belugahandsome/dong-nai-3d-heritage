@@ -19,11 +19,12 @@ export const LANDMARKS: Landmark[] = [
     },
     established: '1715 (thời Chúa Nguyễn Phúc Chu)',
     coordinates: [10.9644, 106.8013],
-    heroImage: '/images/van-mieu-tran-bien.jpg',
+    heroImage: '/images/van-mieu-tran-bien-pano.jpg',
     gallery: [
-      '/images/van-mieu-tran-bien.jpg',
+      '/images/van-mieu-tran-bien-pano.jpg',
       '/images/van-mieu-tran-bien-2.jpg',
       '/images/van-mieu-tran-bien-3.jpg',
+      '/images/van-mieu-tran-bien-4.jpg',
     ],
     shortDesc: {
       vi: 'Văn miếu Trấn Biên là văn miếu đầu tiên được xây dựng tại xứ Đàng Trong vào năm 1715, tiêu biểu cho truyền thống hiếu học, tôn sư trọng đạo và tinh thần khai hoang mở cõi hơn 325 năm của Đồng Nai.',
@@ -121,7 +122,7 @@ export const LANDMARKS: Landmark[] = [
         },
       },
     ],
-    panoUrl: '/images/van-mieu-tran-bien.jpg',
+    panoUrl: '/images/van-mieu-tran-bien-pano.jpg',
   },
   {
     id: 'thanh-co-bien-hoa',

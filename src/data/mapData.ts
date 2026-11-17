@@ -142,20 +142,20 @@ export const MAP_DESTINATIONS: MapDestination[] = [
   {
     id: 'lang-gom-bien-hoa',
     name: {
-      vi: 'Làng Gốm Tân Vạn - Bửu Long',
-      en: 'Bien Hoa Pottery Heritage Village',
+      vi: 'Lò Gốm Cổ Chùa Giác Minh (Tân Vạn)',
+      en: 'Giac Minh Pagoda Ancient Pottery Kiln',
     },
     category: 'craft',
     coordinates: [10.9250, 106.8360],
-    image: '/images/gom-bien-hoa.jpg',
+    image: '/images/quy-trinh-gom-4-lo-cui.jpg',
     address: {
-      vi: 'Đường Bùi Hữu Nghĩa, Phường Tân Vạn, TP. Biên Hòa, Tỉnh Đồng Nai',
-      en: 'Bui Huu Nghia St, Tan Van Ward, Bien Hoa City',
+      vi: 'Lò Gốm cổ chùa Giác Minh, Đ. Bùi Hữu Nghĩa, P. Tân Vạn, TP. Biên Hòa, Tỉnh Đồng Nai',
+      en: 'Giac Minh Pagoda Ancient Pottery Kiln, Bui Huu Nghia St, Tan Van Ward, Bien Hoa City',
     },
     distanceFromHcmc: '28 km (khoảng 35 phút)',
     shortSummary: {
-      vi: 'Làng nghề gốm hơn 300 năm tuổi nức tiếng với men xanh đồng Vert de Bien Hoa.',
-      en: '300-year-old ceramic heritage celebrated for its Vert de Bien Hoa copper glaze.',
+      vi: 'Lò gốm cổ trăm năm tuổi cạnh chùa Giác Minh, cái nôi lưu giữ men xanh đồng Vert de Bien Hoa.',
+      en: 'Centuries-old ancient pottery kiln near Giac Minh Pagoda preserving Bien Hoa ceramic heritage.',
     },
   },
   {
